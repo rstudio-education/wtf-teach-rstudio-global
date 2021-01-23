@@ -4,19 +4,19 @@
 
 ### day 1
 
-08:00 introduction
-08:15 1, 2
-08:55 break
-09:05 3, 4
-10:00 end
+08:00 introduction  
+08:15 1, 2  
+08:55 break  
+09:05 3, 4  
+10:00 end  
 
 ### day 1
 
-08:00 recap
-08:10 5, 6, 7
-08:55 break
-09:05 8, 9, 10
-10:00 end
+08:00 recap  
+08:10 5, 6, 7  
+08:55 break  
+09:05 8, 9, 10  
+10:00 end  
 
 ## outline
 
