@@ -1,0 +1,8 @@
+.Rhistory
+.RData
+.Rproj.user
+.Rapp.history
+_book
+_bookdown_files
+*.rds
+*.key
