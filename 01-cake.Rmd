@@ -1,5 +1,71 @@
+---
+bibliography: references.bib
+---
+
 # Let them eat cake first! {#cake}
 
-\- visualisation from get go
+![](images/icons8-cake-64.png){.cover} Start teaching R with visualisation.
+This means jumping over installation details, which we'll discuss in [cherish day one](\#dayone) as well as basics of the R syntax.
+The "let them eat
+cake first" approach, where students first see an example of a complex data visualisation, which they will be able to build by the end of the course you're teaching, and then slowly work their way
+through the building blocks [@çetinkaya-rundel2020]. This approach is also presented in @wang2017data, which advocates for "bringing big ideas into intro stats early and often".
 
-\- unvotes or covid activity on rstudio cloud
+## Slides
+
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/01-cake/01-cake.html" width="672px" height="379px">
+</iframe>
+```
+## Your turn
+
+You have two options for this exercise:
+
+-   Option 1: Voting patterns of countries in the UN General Assembly
+
+-   Option 2: COVID-19 fatality numbers across the globe
+
+Pick one and complete it.
+Optionally, try the other one as well.
+
+::: {.rstudio-cloud}
+You will use RStudio Cloud for these exercises.
+Click [here](https://rstudio.cloud/spaces/116472/join?access_code=gDHGlJsqAISVgo6FWUpd4FKfZIe6rULO%2FoLvjC85) to join the RStudio Cloud workspace for this workshop.
+:::
+
+### Option 1 - UN Votes
+
+-   Start the project titled `01a - UN Votes`.
+
+-   In the Files pane (bottom right corner), spot the file called `unvotes.Rmd`.
+
+-   Open it and click "Knit".
+
+-   Then...
+
+    -   Go back to the file and change your name on top (in the `yaml` -- we'll talk about what this means later) and knit again.
+    -   Change the country names to those you're interested in. Spelling and capitalization must match how the countries appear in the data, so take a peek at the Appendix to confirm spelling.
+    -   Knit again. Voila, your first data visualization!
+
+### Option 2 - COVID-19
+
+-   Start the project titled `01b - COVID-19`.
+
+-   In the Files pane (bottom right corner), spot the file called `covid.Rmd`.
+
+-   Open it and click "Knit".
+
+-   Then...
+
+    -   Go back to the file and change your name on top (in the `yaml` -- we'll talk about what this means later) and knit again.
+
+    -   Change the country names to those you're interested in.
+        Spelling and capitalization must match how the countries appear in the data, so take a peek at the Appendix to confirm spelling.
+
+    -   Knit again.
+        Voila, your first data visualization!
+
+## More resources
+
+In addition to the referenced articles, you might enjoy the following resources if you'd like to read / hear / watch more on this topic.
+
+-   🎥 [Let them eat cake (first)!](https://youtu.be/RsVOrpXAPXo?t=1007)
