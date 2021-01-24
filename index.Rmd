@@ -21,6 +21,8 @@ In this workshop, you will learn about using the RStudio IDE to its full potenti
 Whether you're an educator by profession, or you do education as part of collaborations or outreach, or you want to improve your workflow for giving talks, demos, and workshops, there is something for you in this workshop.
 During the workshop we will cover live coding best practices, tips for using RStudio Cloud for teaching and building learnr tutorials, and R Markdown based tools for developing instructor and student facing teaching materials.
 
+The source code for everything you see here can be found [on GitHub](https://github.com/rstudio-education/wtf-teach-rstudio-global).
+
 ## License {.unnumbered}
 
 <a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a>
@@ -30,9 +32,9 @@ Visit [here](https://github.com/rstudio-education/datascience-box/blob/master/LI
 
 ## Acknowledgements {.unnumbered}
 
-This website is built with [bookdown](https://bookdown.org/) and the illustrations are by [Desiree de Leon](https://desiree.rbind.io/), originally created for the [RStudio Education website](https://education.rstudio.com/).
+This website is built with [bookdown](https://bookdown.org/) and the illustrations are by [Desiree de Leon](https://desiree.rbind.io/) (originally created for the [RStudio Education website](https://education.rstudio.com/)) and the icons are by [icons8](https://icons8.com/).
 
-The source code for everything you see here can be found [on GitHub](https://github.com/rstudio-education/wtf-teach-rstudio-global).
+------------------------------------------------------------------------
 
 Please note that *What they forgot to teach you about teaching R* uses a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
 By contributing to this project, you agree to abide by its terms.
