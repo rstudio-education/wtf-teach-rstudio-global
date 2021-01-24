@@ -6,7 +6,7 @@
   margin-left: 5px;
   border: 1pt solid #a8a8a8;
   background: #ffffff 5px center/3em no-repeat;
-  background-image: url("cloud.png");
+  background-image: url("icons8-window-cloud-100.png");
 }
 .rstudio-cloud:before {
   content: "RStudio Cloud: ";
@@ -14,6 +14,15 @@
   display: block;
   font-weight: bold;
   color: #5286C2;
+}
+
+
+.video {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background: #ffffff 5px center/3em no-repeat;
+  background-image: url("icons8-documentary-100.png");
 }
 
 /* overwrite bs4_book style */
