@@ -1,1 +1,5 @@
 # Provide instant feedback {#feedback}
+
+\- learnr
+
+\- more hands on walkthrough of <https://rstd.io/global2021/mcr>

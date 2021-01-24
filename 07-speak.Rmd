@@ -1,1 +1,5 @@
 # Define and pronounce terms {#speak}
+
+\- amelia's useR keynote
+
+\- felienne's rstudio::conf keynote

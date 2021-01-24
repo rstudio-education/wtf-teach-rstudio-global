@@ -1,1 +1,10 @@
 # Help with finding help {#community}
+
+\- help with ?h
+elp
+
+\- help with googling
+
+\- help with packages, e.g. searcher
+
+\- help with reprex

@@ -1,1 +1,13 @@
 # Live code early and often {#livecode}
+
+\- live coding during virtual
+
+\- live coding during in person
+
+\- case studies:
+
+- teaching rmarkdown
+
+- teaching IDE
+
+- teaching git

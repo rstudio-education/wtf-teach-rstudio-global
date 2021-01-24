@@ -1,1 +1,9 @@
 # Leverage visuals {#visual}
+
+\- and non-visuals
+
+\- annotation
+
+\- incremental builds
+
+\- xaringan

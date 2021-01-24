@@ -1,1 +1,3 @@
 # Cherish day one {#dayone}
+
+\- using rstudio cloud for teaching
