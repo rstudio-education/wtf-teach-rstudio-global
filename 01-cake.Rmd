@@ -7,8 +7,10 @@ This approach is also presented in @wang2017data, which advocates for "bringing 
 
 ## Slides
 
+Click on the slides and
+
 ```{=html}
-<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/01-cake/01-cake.html" width="672px" height="379px">
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/01-cake/01-cake.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
 ## Your turn
@@ -22,6 +24,11 @@ Optionally, try the other one as well.
 ::: {.rstudio-cloud}
 You will use RStudio Cloud for these exercises.
 Click [here](https://rstudio.cloud/spaces/116472/join?access_code=gDHGlJsqAISVgo6FWUpd4FKfZIe6rULO%2FoLvjC85) to join the RStudio Cloud workspace for this workshop.
+The video below walks you through getting started with RStudio Cloud.
+
+```{=html}
+<iframe width="550" height="309" src="https://www.youtube.com/embed/2ka00b9A0TA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+```
 :::
 
 -   **Option 1:** Voting patterns of countries in the UN General Assembly

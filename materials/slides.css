@@ -237,3 +237,18 @@ img, video, iframe {
 div.datatables {
     color: #fff;
 }
+
+
+/* Three column layout */
+.three-column {
+  float: left;
+  width: 33%;
+  text-align: center;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}

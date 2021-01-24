@@ -27,6 +27,7 @@ library(tidyverse)
 library(unvotes)
 library(lubridate)
 library(countdown)
+library(scales)
 ```
 
 
@@ -196,5 +197,176 @@ un_votes %>%
     subtitle = "1946 to 2015",
     y = "% Yes", x = "Year", color = "Country"
   )
+```
+]
+
+---
+
+class: inverse, middle
+
+## Your turn
+
+---
+
+class: middle
+
+## .hand[ non-trivial examples can be motivating, ]
+## .hand[ but need to avoid ] `r emo::ji("point_down")`
+
+.pull-left[
+```{r owl-1, echo=FALSE, fig.align="right", out.height=390, out.width=250}
+knitr::include_graphics("images/owl-step1.png")
+```
+]
+.pull-right[
+```{r owl-2, echo=FALSE, fig.align="left", out.height=390, out.width=250}
+knitr::include_graphics("images/owl-step2.png")
+```
+]
+
+---
+
+class: middle
+
+.center[
+.three-column[
+```{r ref.label="owl-1", echo=FALSE, out.height=400, out.width=250}
+```
+]
+.three-column[
+## .center[ .hand[ scaffold + layer ] ]
+]
+.three-column[
+```{r ref.label="owl-2", echo=FALSE, out.height=400, out.width=250}
+```
+]
+]
+
+---
+
+```{r echo=FALSE}
+un_uk_us_tr <- un_votes %>%
+  mutate(
+    country = case_when(
+      country == "United Kingdom of Great Britain and Northern Ireland" ~ "UK & NI",
+      country == "United States of America" ~ "US",
+      TRUE ~ country
+    )
+  ) %>%
+  inner_join(un_roll_calls, by = "rcid") %>%
+  inner_join(un_roll_call_issues, by = "rcid") %>%
+  mutate(
+    issue = if_else(issue == "Nuclear weapons and nuclear material", 
+                    "Nuclear weapons and material", 
+                    issue)
+  ) %>%
+  filter(country %in% c("UK & NI", "US", "Turkey")) %>%
+  mutate(year = year(date)) %>%
+  group_by(country, year, issue) %>%
+  summarize(percent_yes = mean(vote == "yes"))
+```
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr) #<<
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes)) #<<
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes)) +
+  geom_point() #<<
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes)) +
+  geom_point() +
+  facet_wrap(~issue) #<<
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) + #<<
+  geom_point() +
+  facet_wrap(~issue)
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) + #<<
+  facet_wrap(~issue)
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) + #<<
+  facet_wrap(~issue) 
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  labs( #<<
+    title = "Percentage of 'Yes' votes in the UN General Assembly", #<<
+    subtitle = "1946 to 2015", #<<
+    y = "% Yes", x = "Year", color = "Country" #<<
+  ) #<<
+```
+]
+
+---
+
+.small[
+```{r out.width = "80%", fig.asp = 0.45, fig.width = 10}
+ggplot(un_uk_us_tr, 
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  labs(
+    title = "Percentage of 'Yes' votes in the UN General Assembly",
+    subtitle = "1946 to 2015",
+    y = "% Yes", x = "Year", color = "Country"
+  ) +
+  scale_y_continuous(labels = label_percent()) #<<
 ```
 ]

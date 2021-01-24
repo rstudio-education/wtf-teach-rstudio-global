@@ -214,6 +214,183 @@ un_votes %&gt;%
   )
 ```
 ]
+
+---
+
+class: middle, center
+
+
+---
+
+class: inverse, middle
+
+## Getting started with RStudio Cloud
+
+---
+
+class: middle
+
+## .hand[ non-trivial examples can be motivating, ]
+## .hand[ but need to avoid ] 👇
+
+.pull-left[
+&lt;img src="images/owl-step1.png" width="250" height="390" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+.pull-right[
+&lt;img src="images/owl-step2.png" width="250" height="390" style="display: block; margin: auto auto auto 0;" /&gt;
+]
+
+---
+
+class: middle
+
+.center[
+.three-column[
+&lt;img src="images/owl-step1.png" width="250" height="400" style="display: block; margin: auto;" /&gt;
+]
+.three-column[
+## .center[ .hand[ scaffold + layer ] ]
+]
+.three-column[
+&lt;img src="images/owl-step2.png" width="250" height="400" style="display: block; margin: auto;" /&gt;
+]
+]
+
+---
+
+
+
+.small[
+
+```r
+*ggplot(un_uk_us_tr)
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-5-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+*      aes(x = year, y = percent_yes))
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-6-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes)) +
+* geom_point()
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-7-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes)) +
+  geom_point() +
+* facet_wrap(~issue)
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-8-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+*      aes(x = year, y = percent_yes, color = country)) +
+  geom_point() +
+  facet_wrap(~issue)
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-9-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+* geom_point(alpha = 0.4) +
+  facet_wrap(~issue)
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-10-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+* geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) 
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-11-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr,
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+* labs(
+*   title = "Percentage of 'Yes' votes in the UN General Assembly",
+*   subtitle = "1946 to 2015",
+*   y = "% Yes", x = "Year", color = "Country"
+* )
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-12-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.small[
+
+```r
+ggplot(un_uk_us_tr, 
+       aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  labs(
+    title = "Percentage of 'Yes' votes in the UN General Assembly",
+    subtitle = "1946 to 2015",
+    y = "% Yes", x = "Year", color = "Country"
+  ) +
+* scale_y_continuous(labels = label_percent())
+```
+
+&lt;img src="01-cake_files/figure-html/unnamed-chunk-13-1.png" width="80%" style="display: block; margin: auto;" /&gt;
+]
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
