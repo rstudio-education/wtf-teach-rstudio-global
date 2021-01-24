@@ -11,6 +11,8 @@ cover-image: sail-hi-square.jpg
 url: 'https\://datasciencebox.org/'
 documentclass: book
 link-citations: yes
+bibliography: references.bib
+biblio-style: apalike
 ---
 
 # Welcome {.unnumbered}
