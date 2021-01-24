@@ -15,7 +15,9 @@ link-citations: yes
 
 # Welcome {.unnumbered}
 
-<img src="wtf-teach.jpg" class="cover" width="240" height="240"/> In this workshop, you will learn about using the RStudio IDE to its full potential for teaching R.
+<img src="wtf-teach.jpg" class="cover" width="240" height="240"/> **What they forgot to teach you about teaching R** is offered at rstudio::global(2021), as part of the Diversity Scholars program.
+
+In this workshop, you will learn about using the RStudio IDE to its full potential for teaching R.
 Whether you're an educator by profession, or you do education as part of collaborations or outreach, or you want to improve your workflow for giving talks, demos, and workshops, there is something for you in this workshop.
 During the workshop we will cover live coding best practices, tips for using RStudio Cloud for teaching and building learnr tutorials, and R Markdown based tools for developing instructor and student facing teaching materials.
 
