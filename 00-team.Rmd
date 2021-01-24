@@ -1,0 +1,11 @@
+# Teaching team {#team .unnumbered}
+
+I'm Mine Çetinkaya-Rundel (she / her) and I'm excited to teach this workshop!
+I'm a Data Scientist and Professional Educator at RStudio as well as faculty the University of Edinburgh.
+
+We'll also have teaching assistants joining us during the workshops:
+
+-   **Shamindra Shrotriya:** My name is Shamindra (he / him) and I'm a PhD candidate in the department of Statistics and Data Science at Carnegie Mellon University (CMU). My research interests include shape constrained estimation and also spatio-temporal wildfire modeling. I am really looking forward to meeting and working with you all.
+-   **Yanina Bellini Saibene:** I'm a researcher at INTA (National Institute of Agricultural Technology) and I'm dedicated to applying data science to the agricultural sector.  I enjoy teaching a lot; I'm a professor in Argentina and Uruguay in two Data Science Specializations. I co-founded MetaDocencia, an open, free, volunteer-led, not-for-profit educational organization for Spanish-speaking teachers. Since 2019 I'm an RStudio Certified Trainer, and since 2020 I'm a Software Carpentries Certified Instructor. I love R Community, so I'm an active member of R-Ladies, LatinR, and MiR.
+-   **Athanasia Monika Mowinckel:** My name is Athanasia, but nobody calls me that. Please call me Mo. I'm a staff scientist at the Center for Lifespan Changes in Brain and Cognition, at the University of Oslo in Norway. I am an active member of the R-Ladies community and the global team, and a certified Software Carpentry Instructor, where I teach mainly R, but also git and bash.
+-   **Melissa Ko:** My name is Melissa and I'm a postdoc in the Bioengineering department at Stanford University, where I work on the curriculum and other educational projects. I like to teach R programming for high school students in Stanford summer programs and also as a volunteer through the Carpentries.\
