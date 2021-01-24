@@ -1,6 +1,6 @@
 # Outline {#outline .unnumbered}
 
-We have 4 hours total together, spread across two 2-hour sessions on two consecutive days.
+`<img src="images/icons8-planner-64.png" class="cover" width="64" height="64"/>`{=html} We have 4 hours total together, spread across two 2-hour sessions on two consecutive days.
 
 You've been assigned to one of the two following cohorts to attend both days:
 

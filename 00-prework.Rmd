@@ -1,5 +1,7 @@
 # Pre-work {#prework .unnumbered}
 
+`<img src="images/icons8-working-with-a-laptop-64.png" class="cover" width="64" height="64"/>`{=html} Please complete the following prior to the workshop.
+
 -   Take this short [Getting to know you survey](https://forms.gle/yLZRAsQvLhoCSn2n8)
 
 -   We'll be using [RStudio Cloud](https://rstudio.cloud/) for the workshops.
