@@ -1,4 +1,17 @@
 # Pre-work {#prework .unnumbered}
 
--   Google Form
--   RStudio Cloud\
+-   Take this short [Getting to know you survey](https://forms.gle/yLZRAsQvLhoCSn2n8)
+
+-   We'll be using [RStudio Cloud](https://rstudio.cloud/) for the workshops.
+
+    -   If you have a Google account, a GitHub account, or an RStudio Cloud account, you're good.
+
+    -   If not, please create one of these.
+
+        -   You can create an account for RStudio Cloud at [https://rstudio.cloud](https://rstudio.cloud/).
+
+        -   Alternatively you can log in to RStudio Cloud with Google and GitHub account so if you prefer, you can create one of these.
+
+    -   Just make sure you remember your password when you get to the workshop.
+
+-   We will have plenty of "your turn" breaks during the show. During these we'll break up into breakout rooms and you'll work with others to complete a few tasks. Especially during these times, it's nice to be able to have your video and mic on. If there is a particular spot in your house, office, etc. where you think you'll have an easier time having keeping these on, plan on joining from there. If that's not feasible, we'll still make it work, but just note that your participation might feel a bit different than others'.\
