@@ -1,7 +1,3 @@
----
-bibliography: references.bib
----
-
 # Let them eat cake first! {#cake}
 
 ![](images/icons8-cake.png){.cover width="100"} Start teaching R with visualisation.
