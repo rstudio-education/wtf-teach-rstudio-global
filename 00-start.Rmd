@@ -1,6 +1,6 @@
 # Start {#start .unnumbered}
 
-![](images/icons8-rocket-64.png){.cover} Let's get started by introducing everyone, laying out the plan for the two days, and getting you thinking about your own learning goals.
+![](images/icons8-rocket.png){.cover width="100"} Let's get started by introducing everyone, laying out the plan for the two days, and getting you thinking about your own learning goals.
 
 ```{=html}
 <iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/00-welcome/00-welcome.html" width="672px" height="379px">

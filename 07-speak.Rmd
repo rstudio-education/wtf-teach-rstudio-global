@@ -1,5 +1,7 @@
 # Define and pronounce terms {#speak}
 
+![](images/icons8-voice-100.png){.cover} Live code early and oftens
+
 \- amelia's useR keynote
 
 \- felienne's rstudio::conf keynote

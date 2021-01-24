@@ -1,6 +1,6 @@
 # Pre-work {#prework .unnumbered}
 
-`<img src="images/icons8-working-with-a-laptop-64.png" class="cover" width="64" height="64"/>`{=html} Please complete the following prior to the workshop.
+![](images/icons8-laptop.png){.cover width="100"} Please complete the following prior to the workshop.
 
 -   Take this short [Getting to know you survey](https://forms.gle/yLZRAsQvLhoCSn2n8)
 
@@ -16,4 +16,8 @@
 
     -   Just make sure you remember your password when you get to the workshop.
 
--   We will have plenty of "your turn" breaks during the show. During these we'll break up into breakout rooms and you'll work with others to complete a few tasks. Especially during these times, it's nice to be able to have your video and mic on. If there is a particular spot in your house, office, etc. where you think you'll have an easier time having keeping these on, plan on joining from there. If that's not feasible, we'll still make it work, but just note that your participation might feel a bit different than others'.\
+-   We will have plenty of "your turn" breaks during the show.
+    During these we'll break up into breakout rooms and you'll work with others to complete a few tasks.
+    Especially during these times, it's nice to be able to have your video and mic on.
+    If there is a particular spot in your house, office, etc. where you think you'll have an easier time having keeping these on, plan on joining from there.
+    If that's not feasible, we'll still make it work, but just note that your participation might feel a bit different than others'.\

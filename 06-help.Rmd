@@ -1,5 +1,7 @@
 # Help with finding help {#community}
 
+![](images/icons8-lifebuoy-100.png){.cover} Live code early and often
+
 \- help with ?h
 elp
 

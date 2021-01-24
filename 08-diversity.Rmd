@@ -1,5 +1,7 @@
 # Highlight diversity {#diversity}
 
+![](images/icons8-heart-100.png){.cover} Live code early and oftens
+
 \- datasets
 
 \- language

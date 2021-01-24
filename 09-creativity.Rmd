@@ -1,1 +1,3 @@
 # Make room for creativity {#creativity}
+
+![](images/icons8-art-prices-100.png){.cover} Live code early and oftens

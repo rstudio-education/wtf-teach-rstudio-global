@@ -1,6 +1,6 @@
 # Teaching team {#team .unnumbered}
 
-<img src="images/icons8-user-groups-64.png" class="cover" width="64" height="64"/> I'm [Mine Çetinkaya-Rundel](http://mine-cr.com/) (she / her) and I'm excited to teach this workshop!
+![](images/icons8-people.png){.cover width="100" height="100"} I'm [Mine Çetinkaya-Rundel](http://mine-cr.com/) (she / her) and I'm excited to teach this workshop!
 I'm a Data Scientist and Professional Educator at RStudio as well as faculty the University of Edinburgh.
 
 We'll also have teaching assistants joining us during the workshops.

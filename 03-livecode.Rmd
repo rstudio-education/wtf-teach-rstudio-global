@@ -1,13 +1,15 @@
 # Live code early and often {#livecode}
 
+![](images/icons8-mouse-pointer-100.png){.cover} Live code early and often
+
 \- live coding during virtual
 
 \- live coding during in person
 
 \- case studies:
 
-- teaching rmarkdown
+-   teaching rmarkdown
 
-- teaching IDE
+-   teaching IDE
 
-- teaching git
+-   teaching git

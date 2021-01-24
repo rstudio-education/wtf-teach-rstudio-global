@@ -1,5 +1,7 @@
 # Provide instant feedback {#feedback}
 
+![](images/icons8-comments-100.png){.cover} Live code early and often
+
 \- learnr
 
 \- more hands on walkthrough of <https://rstd.io/global2021/mcr>
