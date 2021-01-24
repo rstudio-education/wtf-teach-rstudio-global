@@ -10,6 +10,7 @@ rmd_files: [
   "00-outline.Rmd",
   "00-team.Rmd",
   "00-prework.Rmd",
+  "00-start.Rmd",
 
   "01-cake.Rmd",
   "02-dayone.Rmd",
