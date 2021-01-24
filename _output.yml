@@ -1,0 +1,5 @@
+bookdown::bs4_book:
+  css: [css/wtf-teach.css]
+  theme:
+    primary: "#749234"
+  repo: https://github.com/rstudio-education/wtf-teach-rstudio-global/

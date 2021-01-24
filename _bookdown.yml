@@ -1,0 +1,25 @@
+book_filename: "wtf-teach"
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Module "
+
+rmd_files: [
+  "index.Rmd",
+
+  "00-outline.Rmd",
+  "00-team.Rmd",
+
+  "01-cake.Rmd",
+  "02-dayone.Rmd",
+  "03-livecode.Rmd",
+  "04-feedback.Rmd",
+  "05-visual.Rmd",
+  "06-help.Rmd",
+  "07-speak.Rmd",
+  "08-diversity.Rmd",
+  "09-creativity.Rmd",
+  "10-discover.Rmd"
+  ]
+
+new_session: yes

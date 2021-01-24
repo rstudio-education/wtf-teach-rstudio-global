@@ -1,0 +1,36 @@
+---
+knit: bookdown::render_book
+site: bookdown::bookdown_site
+title: "What they forgot to teach you about teaching R"
+author: "Mine Çetinkaya-Rundel"
+description: "In this workshop, you will learn about using the RStudio IDE to its full potential for teaching R. Whether you’re an educator by profession, or you do education as part of collaborations or outreach, or you want to improve your workflow for giving talks, demos, and workshops, there is something for you in this workshop. During the workshop we will cover live coding best practices, tips for using RStudio Cloud for teaching and building learnr tutorials, and R Markdown based tools for developing instructor and student facing teaching materials."
+date: "`r Sys.Date()`"
+github-repo: rstudio-education/wtf-teach-rstudio-global
+twitter-handle: minebocek
+cover-image: wtf-teach.jpg
+url: 'https\://datasciencebox.org/'
+documentclass: book
+link-citations: yes
+---
+
+# Welcome {.unnumbered}
+
+<img src="wtf-teach.jpg" class="cover" width="240" height="240"/> In this workshop, you will learn about using the RStudio IDE to its full potential for teaching R.
+Whether you're an educator by profession, or you do education as part of collaborations or outreach, or you want to improve your workflow for giving talks, demos, and workshops, there is something for you in this workshop.
+During the workshop we will cover live coding best practices, tips for using RStudio Cloud for teaching and building learnr tutorials, and R Markdown based tools for developing instructor and student facing teaching materials.
+
+## License {.unnumbered}
+
+<a rel="license" href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://licensebuttons.net/l/by-sa/4.0/88x31.png" alt="Creative Commons License" style="border-width:0"/></a>
+
+This online work is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International](https://creativecommons.org/licenses/by-sa/4.0/).
+Visit [here](https://github.com/rstudio-education/datascience-box/blob/master/LICENSE.md) for more information about the license.
+
+## Acknowledgements {.unnumbered}
+
+This website is built with [bookdown](https://bookdown.org/) and the illustrations are by [Desiree de Leon](https://desiree.rbind.io/), originally created for the [RStudio Education website](https://education.rstudio.com/).
+
+The source code for everything you see here can be found [on GitHub](https://github.com/rstudio-education/wtf-teach-rstudio-global).
+
+Please note that *What they forgot to teach you about teaching R* uses a [Contributor Code of Conduct](https://contributor-covenant.org/version/2/0/CODE_OF_CONDUCT.html).
+By contributing to this project, you agree to abide by its terms.
