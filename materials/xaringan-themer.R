@@ -9,7 +9,7 @@ style_duo_accent(
   secondary_color = "#2c4673",                 # dark blue
   title_slide_text_color = "#2c4673",
   title_slide_background_color = "#5286c2",
-  code_highlight_color = "#c6d7eb",            # light blue
+  code_highlight_color = "#e9765a50",          # pink faint
   code_inline_color = "#A7A7A7",               # gray
   blockquote_left_border_color = "#e9d968",    # yellow
   base_font_size = "28px",
