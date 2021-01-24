@@ -1,0 +1,200 @@
+---
+title: "Let them eat cake first!"
+subtitle: "<br><br> What they forgot to teach you<br>about *teaching* R"
+author: "[wtf-teach.netlify.app](https://wtf-teach.netlify.app/)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["../xaringan-themer.css", "../slides.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "../setup.Rmd"}
+```
+
+```{r load-packages, message = FALSE, echo = FALSE}
+library(magick)
+library(tidyverse)
+library(unvotes)
+library(lubridate)
+library(countdown)
+```
+
+
+class: middle, inverse
+
+## How do you prefer your cake recipes? Words only, or words & pictures?
+
+.pull-left[
+```{r recipe-picture, echo=FALSE}
+knitr::include_graphics("images/recipe-picture.png")
+```
+]
+.pull-right[
+```{r recipe-words, echo=FALSE}
+knitr::include_graphics("images/recipe-words.png")
+```
+]
+
+---
+
+class: middle, inverse
+
+## How do you prefer your cake recipes? Words only, or words & pictures?
+
+.pull-left[
+```{r recipe-picture-selected, echo=FALSE, cache=TRUE}
+image_read("images/recipe-picture.png") %>%
+  image_border("#F5B895", "50x50") %>%
+  image_annotate("\u2665", size = 300, gravity = "SouthEast", color = "#F5B895", location = "+100+50")
+```
+]
+.pull-right[
+```{r recipe-words-xed, echo=FALSE, cache=TRUE}
+image_read("images/recipe-words.png") %>%
+  image_annotate("X", size = 1200, gravity = "Center", color = "#638CC7")
+```
+]
+
+---
+
+.pull-left[
+```{r recipe-picture-small, echo=FALSE, out.height=150, out.width=250, fig.align="center"}
+knitr::include_graphics("images/recipe-picture.png")
+```
+- Open today's demo project
+- Knit the document and discuss the visualisation you made with your neighbor
+- Then, change `Turkey` to a different country, and plot again
+]
+.pull-right[
+```{r recipe-words-small, echo=FALSE, out.height=150, out.width=250, fig.align="center"}
+knitr::include_graphics("images/recipe-words.png")
+```
+.small[
+```{r recipe-words-code}
+x <- 8
+y <- "monkey"
+z <- FALSE
+
+class(x)
+class(y)
+class(z)
+```
+]
+]
+
+---
+
+class: middle
+
+## .hand[ with with great examples, ]
+## .hand[ comes a great amount of code... ]
+
+---
+
+class: middle
+
+## .hand[ but let’s focus on the task at hand... ]
+
+- Open today's demo project
+- Knit the document and discuss the visualisation you made with your neighbor
+- Then, **.pink[ change `Turkey` to a different country, and plot again]**
+
+---
+
+.midi[
+```{r unvotes-code-1, eval=FALSE}
+un_votes %>%
+  mutate(country = case_when(
+    country == "United Kingdom of Great Britain and Northern Ireland" ~ "UK & NI",
+    country == "United States of America" ~ "US",
+    TRUE ~ country
+    )
+  ) %>%
+  inner_join(un_roll_calls, by = "rcid") %>%
+  inner_join(un_roll_call_issues, by = "rcid") %>%
+  filter(country %in% c("UK & NI", "US", "Turkey")) %>%
+  mutate(year = year(date)) %>%
+  group_by(country, year, issue) %>%
+  summarize(percent_yes = mean(vote == "yes")) %>%
+  ggplot(mapping = aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  scale_y_continuous(labels = percent) +
+  labs(
+    title = "Percentage of 'Yes' votes in the UN General Assembly",
+    subtitle = "1946 to 2015",
+    y = "% Yes", x = "Year", color = "Country"
+  )
+```
+]
+
+---
+
+.midi[
+```{r unvotes-code-2, eval=FALSE}
+un_votes %>%
+  mutate(country = case_when(
+    country == "United Kingdom of Great Britain and Northern Ireland" ~ "UK & NI",
+    country == "United States of America" ~ "US",
+    TRUE ~ country
+    )
+  ) %>%
+  inner_join(un_roll_calls, by = "rcid") %>%
+  inner_join(un_roll_call_issues, by = "rcid") %>%
+  filter(country %in% c("UK & NI", "US", "Turkey")) %>% #<<
+  mutate(year = year(date)) %>%
+  group_by(country, year, issue) %>%
+  summarize(percent_yes = mean(vote == "yes")) %>%
+  ggplot(mapping = aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  scale_y_continuous(labels = percent) +
+  labs(
+    title = "Percentage of 'Yes' votes in the UN General Assembly",
+    subtitle = "1946 to 2015",
+    y = "% Yes", x = "Year", color = "Country"
+  )
+```
+]
+
+---
+
+.midi[
+```{r unvotes-code-3, eval=FALSE}
+un_votes %>%
+  mutate(country = case_when(
+    country == "United Kingdom of Great Britain and Northern Ireland" ~ "UK & NI",
+    country == "United States of America" ~ "US",
+    TRUE ~ country
+    )
+  ) %>%
+  inner_join(un_roll_calls, by = "rcid") %>%
+  inner_join(un_roll_call_issues, by = "rcid") %>%
+  filter(country %in% c("UK & NI", "US", "France")) %>% #<<
+  mutate(year = year(date)) %>%
+  group_by(country, year, issue) %>%
+  summarize(percent_yes = mean(vote == "yes")) %>%
+  ggplot(mapping = aes(x = year, y = percent_yes, color = country)) +
+  geom_point(alpha = 0.4) +
+  geom_smooth(method = "loess", se = FALSE) +
+  facet_wrap(~issue) +
+  scale_y_continuous(labels = percent) +
+  labs(
+    title = "Percentage of 'Yes' votes in the UN General Assembly",
+    subtitle = "1946 to 2015",
+    y = "% Yes", x = "Year", color = "Country"
+  )
+```
+]
