@@ -1,0 +1,10 @@
+# Leverage visuals {#visual}
+
+![](images/icons8-picture-100.png){.cover} Visuals are incredibly powerful aides for learning, but not all pictures are worth a thousand words.
+How can you make the visuals you use for teaching even more effective?
+
+<!--# annotation, incremental builds, non-visuals, xaringan -->
+
+------------------------------------------------------------------------
+
+Materials to be posted.

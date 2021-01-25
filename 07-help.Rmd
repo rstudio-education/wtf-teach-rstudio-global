@@ -1,0 +1,10 @@
+# Help with finding help {#community}
+
+![](images/icons8-lifebuoy-100.png){.cover} "Just google it!" is easier said than done!
+It's important to take your students through the process of finding help.
+
+<!--# help with ?help, help with googling, help with packages, e.g. searcher, help with reprex -->
+
+------------------------------------------------------------------------
+
+Materials to be posted.

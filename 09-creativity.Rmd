@@ -1,3 +1,9 @@
 # Make room for creativity {#creativity}
 
-![](images/icons8-art-prices-100.png){.cover} Live code early and oftens
+![](images/icons8-art-prices-100.png){.cover} Consider making room for creativity, however long or short your workshop, course, etc.
+
+<!--# tree, ugly ggplot2, open-ended projects, etc. -->
+
+------------------------------------------------------------------------
+
+Materials to be posted.

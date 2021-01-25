@@ -1,4 +1,4 @@
-# Define and pronounce terms {#speak}
+# Define and pronounce {#speak}
 
 ![](images/icons8-voice-100.png){.cover} Live code early and oftens
 

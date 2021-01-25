@@ -1,7 +1,10 @@
 # Highlight diversity {#diversity}
 
-![](images/icons8-heart-100.png){.cover} Live code early and oftens
+![](images/icons8-heart-100.png){.cover} There are lots of materials out there that you can highlight in your course.
+Consider how you can make whose materials you're highlighting, whose voices you're amplifying, what language those materials are in, and whether your students (*all* of your students) can see themselves among them.
 
-\- datasets
+<!--# datasets, language -->
 
-\- language
+------------------------------------------------------------------------
+
+Materials to be posted.
