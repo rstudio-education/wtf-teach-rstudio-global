@@ -40,7 +40,7 @@ class: inverse, middle
 - Helps you articulate each step
 
 --
-- Allows you to show the process
+- Allows you to demonstrate the order and process
 
 --
 - (Most likely) causes you to make errors (that you can turn into teachable moments or use to show everyone makes errors!)
