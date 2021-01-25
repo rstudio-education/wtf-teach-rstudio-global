@@ -44,3 +44,8 @@ Using RStudio Cloud for setting up your course: [Accessing R](https://datascienc
 ::: {.video}
 Webinar: [RStudio Cloud in the classroom](https://rstudio.com/resources/webinars/rstudio-cloud-in-the-classroom/)
 :::
+
+::: {#.reading}
+Çetinkaya-Rundel, Mine, and Colin Rundel.
+["Infrastructure and tools for teaching computing throughout the statistical curriculum."](https://search.proquest.com/docview/1952463549?pq-origsite=gscholar&fromopenview=true) *The American Statistician* 72.1 (2018): 58-65.
+:::

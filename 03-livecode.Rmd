@@ -24,7 +24,7 @@ To view the slides in full screen, click on the slides and then hit F on your ke
 ## More resources
 
 ::: {.reading}
-[Live coding chapter](https://teachtogether.tech/en/index.html#s:performance-live) in Teaching Tech Together by Greg Wilson
+Live coding chapter in Teaching Tech Together by Greg Wilson, [in English](https://teachtogether.tech/en/index.html#s:performance-live) and [in Spanish](https://teachtogether.tech/es/index.html#s:performance-live)
 :::
 
 ::: {.reading}
