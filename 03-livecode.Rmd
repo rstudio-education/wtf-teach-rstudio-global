@@ -1,9 +1,15 @@
+---
+bibliography: references.bib
+---
+
 # Live code early and often {#livecode}
 
 ![](images/icons8-mouse-pointer-100.png){.cover} Think back to your last math heavy course, one with proofs or problems that required multi-step solutions.
 Did you prefer to see all steps at once or prefer that the instructor walk through the steps at a reasonable pace, revealed them incrementally, and talked through their reasoning?
 I'm guessing the latter.
 Live coding is just like that, except with code instead of math.
+@raj2018 is just one of the many papers that suggests that live coding is the most effective way of teaching programming.
+But, of course, just like any effective pedagogy, implementation details matter for learning and enjoyment of your learners.
 
 ## Slides
 
