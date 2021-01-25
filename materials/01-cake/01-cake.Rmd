@@ -26,7 +26,6 @@ library(magick)
 library(tidyverse)
 library(unvotes)
 library(lubridate)
-library(countdown)
 library(scales)
 ```
 
