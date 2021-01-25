@@ -13,3 +13,17 @@ Click on the slides and then hit F on your keyboard to view the slides in full s
 <iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/02-dayone/02-dayone.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
+## More resources
+
+::: {.reading}
+[Live coding chapter](https://teachtogether.tech/en/index.html#s:performance-live) in Teaching Tech Together by Greg Wilson
+:::
+
+::: {.reading}
+[Code live from RStudio, and share it with the World in real time](https://bitsandbricks.github.io/post/code-live-from-rstudio-and-share-it-with-the-world-in-real-time/) by H.
+Antonio Vazquez Brust
+:::
+
+::: {.video}
+Inspiration: [Julia Silge's live coding videos](https://www.youtube.com/channel/UCTTBgWyJl2HrrhQOOc710kA)
+:::
