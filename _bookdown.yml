@@ -1,8 +1,5 @@
 book_filename: "wtf-teach"
 delete_merged_file: true
-language:
-  ui:
-    chapter_name: "Module "
 
 rmd_files: [
   "index.Rmd",
