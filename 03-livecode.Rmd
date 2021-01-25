@@ -7,12 +7,14 @@ Live coding is just like that, except with code instead of math.
 
 ## Slides
 
-Click on the slides and then hit F on your keyboard to view the slides in full screen.
-
 ```{=html}
 <iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/02-dayone/02-dayone.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
+
 ## More resources
 
 ::: {.reading}

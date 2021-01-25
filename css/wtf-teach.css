@@ -16,6 +16,11 @@
   color: #5286C2;
 }
 
+.tip {
+  color: #777;
+  font-size: 14px;
+  background: #ffffff 5px center/3em no-repeat;
+}
 
 .video {
   padding: 1em 1em 1em 4em;

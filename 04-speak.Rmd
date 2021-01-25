@@ -5,6 +5,14 @@ What is a double?
 How do you say `%>%` out loud?
 How do you pronounce `POSIXct`? Answers to some of these might seem obvious to you, but may not be obvious to a new learner.
 
+## Slides
+
+To be posted.
+
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
+
 ## Your turn
 
 Think back to when you first started learning R... What is an R (or general programming) related term that wasn't clear to you but your instructor, book, documentation, etc. assumed familiarity with it?
