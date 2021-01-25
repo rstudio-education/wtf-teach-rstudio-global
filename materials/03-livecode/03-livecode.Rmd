@@ -21,11 +21,6 @@ output:
 ```{r child = "../setup.Rmd"}
 ```
 
-```{r load-packages, message = FALSE, echo = FALSE}
-library(magick)
-library(tidyverse)
-```
-
 class: inverse, middle
 
 # Why?
