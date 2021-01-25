@@ -1,15 +1,15 @@
 # Live code early and often {#livecode}
 
-![](images/icons8-mouse-pointer-100.png){.cover} Live code early and often
+![](images/icons8-mouse-pointer-100.png){.cover} Think back to your last math heavy course, one with proofs or problems that required multi-step solutions.
+Did you prefer to see all steps at once or prefer that the instructor walk through the steps at a reasonable pace, revealed them incrementally, and talked through their reasoning?
+I'm guessing the latter.
+Live coding is just like that, except with code instead of math.
 
-\- live coding during virtual
+## Slides
 
-\- live coding during in person
+Click on the slides and then hit F on your keyboard to view the slides in full screen.
 
-\- case studies:
-
--   teaching rmarkdown
-
--   teaching IDE
-
--   teaching git
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/02-dayone/02-dayone.html" width="672px" height="379px" allowfullscreen>
+</iframe>
+```
