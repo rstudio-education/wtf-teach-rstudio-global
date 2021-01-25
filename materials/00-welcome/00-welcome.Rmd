@@ -74,9 +74,3 @@ output:
 | 09:05 - 10:00 | Highlight diversity           |
 |               | Make room for creativity      |
 |               | Optimize discoverability      |
-
----
-
-### About you
-
-link to dashboard...
