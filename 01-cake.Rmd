@@ -7,7 +7,7 @@ This approach is also presented in @wang2017data, which advocates for "bringing 
 
 ## Slides
 
-Click on the slides and
+Click on the slides and then hit F on your keyboard to view the slides in full screen.
 
 ```{=html}
 <iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/01-cake/01-cake.html" width="672px" height="379px" allowfullscreen>
@@ -74,5 +74,9 @@ Don't worry too much about feasibility (e.g. is such data easily accessible), in
 In addition to the referenced articles, you might enjoy the following resources if you'd like to read / hear / watch more on this topic.
 
 ::: {.video}
-[Let them eat cake (first)!](https://youtu.be/RsVOrpXAPXo?t=1007)
+Deeper dive into the pedagody: [Let them eat cake (first)!](https://youtu.be/RsVOrpXAPXo?t=1007)
+:::
+
+::: {.reading}
+R package for incremental ggplot2 builds: [Flipbooks](https://evamaerey.github.io/flipbooks/about) by Gina Reynolds
 :::

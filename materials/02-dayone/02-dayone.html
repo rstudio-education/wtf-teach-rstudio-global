@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Cherish day one</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="wtf-teach.netlify.app" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link rel="stylesheet" href="../xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="../slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Cherish day one
+## <br><br> What they forgot to teach you<br>about <em>teaching</em> R
+### <a href="https://wtf-teach.netlify.app/">wtf-teach.netlify.app</a>
+
+---
+
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="http://wtf-teach.netlify.app/" target="_blank"&gt;wtf-teach.netlify.app&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+
+
+class: inverse, middle
+
+# Let's start with another question...
+
+---
+
+class: middle, inverse
+
+## Which kitchen would you rather bake in? 
+
+.pull-left[
+&lt;img src="images/kitchen-inrepair.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="images/kitchen-built.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: middle, inverse
+
+## Which kitchen would you rather bake in?
+
+.pull-left[
+&lt;img src="02-dayone_files/figure-html/kitchen-inrepair-xed-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right[
+&lt;img src="02-dayone_files/figure-html/kitchen-built-selected-1.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.pull-left[
+&lt;img src="images/kitchen-inrepair.png" width="60%" height="250" style="display: block; margin: auto;" /&gt;
+- Install R
+- Install RStudio
+- Install the following packages:
+  - tidyverse
+  - rmarkdown
+  - ...
+- Load these packages
+- Install git
+]
+.pull-right[
+&lt;img src="images/kitchen-built.png" width="60%" height="250" style="display: block; margin: auto;" /&gt;
+- Go to rstudio.cloud (or some other server based solution)
+- Log in with your ID &amp; pass
+
+```r
+&gt; hello R!
+```
+]
+
+---
+
+class: inverse, middle
+
+# Hello RStudio Cloud!
+
+---
+
+## What is RStudio Cloud?
+
+.pull-left-narrow[
+&lt;img src="images/cloud.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+.pull-right-wide[
+.large[We created **RStudio Cloud** to make it easy for professionals, hobbyists, trainers, teachers, and students to do, share, teach, and learn data science using R.]
+]
+
+---
+
+&lt;img src="images/rstudio-ide.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="images/rstudio-cloud.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Why RStudio Cloud?
+
+- Does not require IT support
+- Features designed for instructors:
+  - Classes can be organized in workspaces
+  - Members can be assigned different roles: instructor, TA, student
+  - Projects can be public or private
+  - Projects can be made into assignments 
+  - Students can make copies of projects created by instructor
+  - Instructor can peek into student projects
+  - A base project template can ensure same packages in each new project created in the workspace
+  - Git works out of the box
+
+---
+
+class: inverse, middle
+
+# Context 1: You're sharing a project
+
+.hand[at a meetup talk, conference presentation, teaching a class, etc.]
+
+---
+
+class: middle
+
+.larger[
+👩‍🏫 presenter (teacher)
+]
+.larger[
+👩‍💻 audience (student)
+]
+
+---
+
+## Single project, instructor view
+
+&lt;iframe width="1200" height="530" src="https://www.youtube.com/embed/81MrMcKZTX8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+.right[ .large[ 👩‍🏫  ]  ]
+
+---
+
+## Single project, student view
+
+&lt;iframe width="1200" height="530" src="https://www.youtube.com/embed/_VCYdDQTFG8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+.right[ .large[ 👩‍💻  ]  ]
+
+---
+
+## Sharing an individual project
+
+.pull-left[
+.hand[.green[Good!]]
+
+- Students land directly in a project upon login
+- Works well for workshops where all work will be completed in a single project
+- Also great for sharing code in general, e.g. collaboration, reprexes, etc.
+]
+--
+.pull-right[
+.hand[.pink[Not so good...]]
+
+- Students need to remember to make a copy of the project (which means you need to remember to remind them!)
+- Changes you make after student launches the project won’t propagate to their project
+]
+
+---
+
+class: inverse, middle
+
+# Context 2: You're sharing a workspace
+
+.hand[for teaching a longer workshop, course, etc.]
+
+---
+
+## Creating a workspace, instructor view
+
+&lt;iframe width="1200" height="530" src="https://www.youtube.com/embed/tqu1m9R1HLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen&gt;&lt;/iframe&gt;
+
+.right[ .large[ 👩‍🏫  ]  ]
+
+---
+
+## Sharing a workspace
+
+.pull-left[
+.hand[.green[Good!]]
+
+- Various permission levels
+- Base projects with desired packages installed
+- Assignments, which remove the need to remind students to make a copy of the project before starting work
+- Ability to peek into students’ projects
+]
+.pull-right[
+.hand[.pink[Not so good...]]
+
+- Students land in the workspace, may need to provide instructions for the next steps
+- You can update the base project throughout the course, but it will only be applied to projects created going forward
+]
+
+---
+
+class: inverse, middle
+
+# Your turn
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-light",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

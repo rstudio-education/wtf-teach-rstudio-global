@@ -1,3 +1,44 @@
 # Cherish day one {#dayone}
 
-![](images/icons8-new-year-calendar-100.png){.cover} Use rstudio cloud for teaching
+![](images/icons8-new-year-calendar-100.png){.cover} Don't spend the first day going through the syllabus in detail, aim to get students to make their first meaningful data visualization in 10 minutes!
+This might sound impossible, and it probably is, if you start by installing R, and then RStudio, and then a bunch of packages, and making sure students have Git working on their computer.
+You could spend a whole class (or more) on this and not get to a point where every student has their local setup working in an ideal fashion.
+
+Instead, use cloud-based access to RStudio.
+This could be via RStudio Cloud or an RStudio Server you set up locally at your institution.
+
+## Slides
+
+Click on the slides and then hit F on your keyboard to view the slides in full screen.
+
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/02-dayone/02-dayone.html" width="672px" height="379px" allowfullscreen>
+</iframe>
+```
+## Your turn
+
+### Do
+
+-   First you're the instructor:
+
+    -   Go out of the workspace for this workshop, and back to **Your Workspace**.
+    -   Create a new project and give it a name.
+    -   Create a template R Markdown document in the project and add/modify some content. Keep it simple!
+    -   Change the access level of the project so others can see it as well.
+    -   Grab the project URL and share it with someone in your breakout group.
+
+-   Now you're the student: Access your partner's project as if you're the student and they're the instructor.
+
+### Discuss
+
+What is one question you have about using RStudio Cloud (or other server based RStudio access for teaching) that wasn't answered in this module?
+
+## More resources
+
+::: {.reading}
+Using RStudio Cloud for setting up your course: [Accessing R](https://datasciencebox.org/access-r.html) in Data Science in a Box
+:::
+
+::: {.video}
+Webinar: [RStudio Cloud in the classroom](https://rstudio.com/resources/webinars/rstudio-cloud-in-the-classroom/)
+:::

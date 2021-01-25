@@ -30,6 +30,11 @@ library(countdown)
 library(scales)
 ```
 
+class: inverse, middle
+
+# Let's start with a question...
+
+---
 
 class: middle, inverse
 
@@ -204,7 +209,13 @@ un_votes %>%
 
 class: inverse, middle
 
-## Your turn
+# Your turn
+
+---
+
+class: inverse, middle
+
+# Back to the main course
 
 ---
 
