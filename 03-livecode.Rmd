@@ -14,7 +14,7 @@ But, of course, just like any effective pedagogy, implementation details matter 
 ## Slides
 
 ```{=html}
-<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/02-dayone/02-dayone.html" width="672px" height="379px" allowfullscreen>
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/03-livecode/03-livecode.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
 ::: {.tip}
