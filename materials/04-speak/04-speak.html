@@ -80,29 +80,6 @@ class: inverse, middle
 
 ## Read code and results out loud
 
-
-```r
-library(tidyverse)
-library(palmerpenguins)
-
-penguins %&gt;%
-  group_by(species) %&gt;%
-  summarise(mean_bm = mean(body_mass_g, na.rm = TRUE))
-```
-
-```
-## # A tibble: 3 x 2
-##   species   mean_bm
-## * &lt;fct&gt;       &lt;dbl&gt;
-## 1 Adelie      3701.
-## 2 Chinstrap   3733.
-## 3 Gentoo      5076.
-```
-
----
-
-## Read code and results out loud
-
 .small[
 
 ```r

@@ -7,15 +7,34 @@ How do you pronounce `POSIXct`? Answers to some of these might seem obvious to y
 
 ## Slides
 
-To be posted.
-
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/04-speak/04-speak.html" width="672px" height="379px" allowfullscreen>
+</iframe>
+```
 ::: {.tip}
 To view the slides in full screen, click on the slides and then hit F on your keyboard.
 :::
 
 ## Your turn
 
-Think back to when you first started learning R... What is an R (or general programming) related term that wasn't clear to you but your instructor, book, documentation, etc. assumed familiarity with it?
+1.  Read the following code chunks out loud. As a group, try to come to an agreement on how to pronounce everything you see on the screen.
+
+```{r}
+library(palmerpenguins)
+
+aggregate(penguins[, 3], list(penguins$species), median, na.rm = TRUE)
+```
+
+```{r message = FALSE}
+library(palmerpenguins)
+library(tidyverse)
+
+penguins %>%
+  group_by(species) %>%
+  summarise(median_bl = median(bill_length_mm, na.rm = TRUE))
+```
+
+2.  Think back to when you first started learning R... What is an R (or general programming) related term that wasn't clear to you but your instructor, book, documentation, etc. assumed familiarity with it?
 
 ## More resources
 
@@ -25,4 +44,8 @@ Think back to when you first started learning R... What is an R (or general prog
 
 ::: {.video}
 [Explicit Direct Instruction](https://rstudio.com/resources/rstudioconf-2019/explicit-direct-instruction-in-programming-education/) in Programming Education by Felienne
+:::
+
+::: {.package}
+[glosario](https://glosario.carpentries.org/) - an open source glossary of terms used in data science that is available online and also as a library in both R and Python.
 :::

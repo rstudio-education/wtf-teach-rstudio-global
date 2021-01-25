@@ -67,19 +67,6 @@ class: inverse, middle
 
 ## Read code and results out loud
 
-```{r}
-library(tidyverse)
-library(palmerpenguins)
-
-penguins %>%
-  group_by(species) %>%
-  summarise(mean_bm = mean(body_mass_g, na.rm = TRUE))
-```
-
----
-
-## Read code and results out loud
-
 .small[
 ```{r penguin-plot, fig.asp = 0.55}
 ggplot(penguins, 
