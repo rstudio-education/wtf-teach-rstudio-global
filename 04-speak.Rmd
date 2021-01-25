@@ -1,7 +1,20 @@
 # Define and pronounce {#speak}
 
-![](images/icons8-voice-100.png){.cover} Live code early and oftens
+![](images/icons8-voice-100.png){.cover} What is a floating point?
+What is a double?
+How do you say `%>%` out loud?
+How do you pronounce `POSIXct`? Answers to some of these might seem obvious to you, but may not be obvious to a new learner.
 
-\- amelia's useR keynote
+## Your turn
 
-\- felienne's rstudio::conf keynote
+Think back to when you first started learning R... What is an R (or general programming) related term that wasn't clear to you but your instructor, book, documentation, etc. assumed familiarity with it?
+
+## More resources
+
+::: {.video}
+[Speaking R](https://youtu.be/ckW9sSdIVAc) by Amelia McNamara
+:::
+
+::: {.video}
+[Explicit Direct Instruction](https://rstudio.com/resources/rstudioconf-2019/explicit-direct-instruction-in-programming-education/) in Programming Education by Felienne
+:::
