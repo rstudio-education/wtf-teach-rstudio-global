@@ -123,6 +123,22 @@ class: inverse, middle
 
 ---
 
+## Virtual, live audience
+
+```{r echo=FALSE, out.width="85%"}
+knitr::include_graphics("images/live.png")
+```
+
+---
+
+## Virtual, prerecorded
+
+```{r echo=FALSE, out.width="85%"}
+knitr::include_graphics("images/prerecord.png")
+```
+
+---
+
 ## Live coding with strictly limited time
 
 .hand[e.g. meetup presentations, conference talks, etc.]
