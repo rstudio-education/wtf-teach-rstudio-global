@@ -6,3 +6,6 @@
 <iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/00-welcome/00-welcome.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
