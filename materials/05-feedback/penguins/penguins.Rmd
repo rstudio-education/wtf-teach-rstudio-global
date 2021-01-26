@@ -4,9 +4,15 @@ output:
   learnr::tutorial:
     progressive: true
     allow_skip: true
+    css: "css/font-size.css"
 runtime: shiny_prerendered
 ---
 
+<!-- Add JavaScript code for making the exercise code larger -->
+
+```{=html}
+<script language="JavaScript" src="js/exercise-font-size.js"></script>
+```
 ```{r setup, include=FALSE}
 # packages
 library(learnr)
@@ -97,7 +103,7 @@ question(
 
 Create a frequency table of the species of penguins on Biscoe island, and display the results in descending order of frequency.
 
-Your task is to add more `fail_if()` statements to the code checking chunk to check for realistic mistakes students can make and give them informative feedback that will nudge them in the right direction.
+Your task is to add more `fail_if_equal()` statements to the code checking chunk to check for realistic mistakes students can make and give them informative feedback that will nudge them in the right direction.
 
 ```{r penguins-count, exercise = TRUE}
 penguins %>%

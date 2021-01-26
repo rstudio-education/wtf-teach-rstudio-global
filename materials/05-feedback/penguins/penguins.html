@@ -104,6 +104,7 @@ $(document).ready(function () {
 <!-- end tabsets -->
 
 
+<link rel="stylesheet" href="css/font-size.css" type="text/css" />
 
 </head>
 
@@ -116,6 +117,8 @@ $(document).ready(function () {
 
 <div class="topics">
 
+<!-- Add JavaScript code for making the exercise code larger -->
+<script language="JavaScript" src="js/exercise-font-size.js"></script>
 <hr />
 <p><strong>This is a demo tutorial created for the “What they forgot to teach you about teaching R” workshop. See <a href="http://wtf-teach.netlify.app/">here</a> for slides and full set of materials from the workshop series.</strong></p>
 <hr />
@@ -183,7 +186,7 @@ library(palmerpenguins)</code></pre>
 <div id="section-checking-for-the-result" class="section level3">
 <h3>Checking for the result</h3>
 <p>Create a frequency table of the species of penguins on Biscoe island, and display the results in descending order of frequency.</p>
-<p>Your task is to add more <code>fail_if()</code> statements to the code checking chunk to check for realistic mistakes students can make and give them informative feedback that will nudge them in the right direction.</p>
+<p>Your task is to add more <code>fail_if_equal()</code> statements to the code checking chunk to check for realistic mistakes students can make and give them informative feedback that will nudge them in the right direction.</p>
 <div class="tutorial-exercise" data-label="penguins-count" data-completion="1" data-diagnostics="1" data-startover="1" data-lines="0">
 <pre class="text"><code>penguins %&gt;%
   filter(island __ &quot;Biscoe&quot;) %&gt;%
@@ -298,7 +301,7 @@ library(palmerpenguins)</code></pre>
 </div>
 <div id="section-decode-demo" class="section level2">
 <h2>Decode demo</h2>
-<p>The following would not be included in a student facing tutorial, but has been included here to demonstrate the decoding functionality of the <a href="https://github.com/rundel/learnrhash"><code>learnrhash</code></a> package.</p>
+<p>The following would not be included in a student facing tutorial, but has been included here to demonstrate the decoding functionality of the <a href="https://rundel.github.io/learnrhash/"><code>learnrhash</code></a> package.</p>
 <p>Paste your hash from the preceding step into the text box below and push the Decode button. You should then see printed tibbles containing the question and exercise results you have entered into the tutorial so far. See the package README for details on how these data would be extracted in practice for a real assignment.</p>
 <div>
 <div class="form-group shiny-input-container">
@@ -409,20 +412,20 @@ learnr:::store_exercise_cache("load-package", list(setup = NULL, chunks = list(l
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "awesome-penguins", 
     question = structure("How awesome are penguins?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_24655a", 
+    "character")), answers = list(structure(list(id = "lnr_ans_4a1f8", 
         option = "Super awesome!", value = "Super awesome!", 
         label = structure("Super awesome!", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_75a2b25", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_143660d", 
         option = "Awesome", value = "Awesome", label = structure("Awesome", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_c55e25b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_62f88f3", 
         option = "Meh", value = "Meh", label = structure("Meh", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_89f3bfb", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_99d289e", 
         option = "Not awesome", value = "Not awesome", label = structure("Not awesome", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_d2f51a8", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_1d9a1b2", 
         option = "Super not awesome", value = "Super not awesome", 
         label = structure("Super not awesome", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
@@ -435,23 +438,23 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "awesome-penguins-answer", question = "awesome-penguins"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nHow awesome are penguins?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 870769850.094516, options = list()), class = c("learnr_radio", 
+    seed = 1939238104.59697, options = list()), class = c("learnr_radio", 
 "tutorial_question")))
 </script>
  
 <script type="application/shiny-prerendered" data-context="server">
 learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label = "penguin-colors", 
     question = structure("Penguins are which of the following colors?", html = TRUE, class = c("html", 
-    "character")), answers = list(structure(list(id = "lnr_ans_470d31a", 
+    "character")), answers = list(structure(list(id = "lnr_ans_bfa3176", 
         option = "Black", value = "Black", label = structure("Black", html = TRUE, class = c("html", 
         "character")), correct = TRUE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_e09c65b", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_967765e", 
         option = "White", value = "White", label = structure("White", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_902ed4d", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_f36afb8", 
         option = "Magenta", value = "Magenta", label = structure("Magenta", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
-    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_be666f1", 
+    "tutorial_quiz_answer")), structure(list(id = "lnr_ans_ba86959", 
         option = "Cyan", value = "Cyan", label = structure("Cyan", html = TRUE, class = c("html", 
         "character")), correct = FALSE, message = NULL), class = c("tutorial_question_answer", 
     "tutorial_quiz_answer"))), button_labels = list(submit = structure("Submit Answer", html = TRUE, class = c("html", 
@@ -463,7 +466,7 @@ learnr:::question_prerendered_chunk(structure(list(type = "learnr_radio", label 
         answer = "penguin-colors-answer", question = "penguin-colors"), 
     loading = structure("<strong>Loading:<\u002fstrong> \nPenguins are which of the following colors?\n<br/><br/><br/>", html = TRUE, class = c("html", 
     "character")), random_answer_order = FALSE, allow_retry = FALSE, 
-    seed = 728663408.66069, options = list()), class = c("learnr_radio", 
+    seed = 78178925.9635951, options = list()), class = c("learnr_radio", 
 "tutorial_question")))
 </script>
  
