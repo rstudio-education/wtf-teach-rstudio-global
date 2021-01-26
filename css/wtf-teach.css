@@ -22,6 +22,16 @@
   background: #ffffff 5px center/3em no-repeat;
 }
 
+.clock {
+  padding: 1em 1em 1em 4em;
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background: #ffffff 5px center/3em no-repeat;
+  background-image: url("icons8-clock-100.png");
+}
+
 .video {
   padding: 1em 1em 1em 4em;
   margin-bottom: 5px;
