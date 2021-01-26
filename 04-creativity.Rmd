@@ -25,3 +25,17 @@ You have 10 minutes for this activity.
 You will use RStudio Cloud for these exercises.
 Click [here](https://rstudio.cloud/spaces/116472/join?access_code=gDHGlJsqAISVgo6FWUpd4FKfZIe6rULO%2FoLvjC85) to join or access the RStudio Cloud workspace for this workshop.
 :::
+
+## More resources
+
+::: {.reading}
+[List of packages](https://rstudio-education.github.io/datascience-box/course-materials/hw-instructions/hw-10/hw-10-wrap-up.html) for "pick a package and do something with it" activity
+:::
+
+::: {.reading}
+[Make a tree](http://smarterpoland.pl/index.php/2017/12/christmas-trees/) activity
+:::
+
+::: {.reading}
+[Open-ended project](https://datasciencebox.org/project.html) assignment
+:::
