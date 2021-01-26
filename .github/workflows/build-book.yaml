@@ -45,7 +45,7 @@ jobs:
         run: |
          install.packages("xml2")
          install.packages("remotes")
-         remotes::install_github("rstudio/bslib")
+         install.packages("bslib")
          install.packages("downlit")
          bookdown::render_book("index.Rmd", quiet = TRUE)
         shell: Rscript {0}
