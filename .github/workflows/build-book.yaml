@@ -36,16 +36,20 @@ jobs:
           key: bookdown-${{ hashFiles('**/*Rmd') }}
           restore-keys: bookdown-
 
-      - name: Install packages
+      - name: Install packages from renv
         run: |
           R -e 'install.packages("renv")'
           R -e 'renv::restore()'
 
-      - name: Build site
+      - name: Install more packages
         run: |
          install.packages("xml2")
          install.packages("bslib")
          install.packages("downlit")
+        shell: Rscript {0}
+
+      - name: Build site
+        run: |
          bookdown::render_book("index.Rmd", quiet = TRUE)
         shell: Rscript {0}
 
