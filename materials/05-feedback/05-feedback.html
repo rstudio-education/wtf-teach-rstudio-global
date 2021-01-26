@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Provide instant feedback</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="wtf-teach.netlify.app" />
+    <script src="libs/header-attrs/header-attrs.js"></script>
+    <link href="libs/font-awesome/css/all.css" rel="stylesheet" />
+    <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
+    <link href="libs/panelset/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset/panelset.js"></script>
+    <link href="libs/countdown/countdown.css" rel="stylesheet" />
+    <script src="libs/countdown/countdown.js"></script>
+    <link rel="stylesheet" href="../xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="../slides.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Provide instant feedback
+## <br><br> What they forgot to teach you<br>about <em>teaching</em> R
+### <a href="https://wtf-teach.netlify.app/">wtf-teach.netlify.app</a>
+
+---
+
+
+
+
+
+layout: true
+  
+&lt;div class="my-footer"&gt;
+&lt;span&gt;
+&lt;a href="http://wtf-teach.netlify.app/" target="_blank"&gt;wtf-teach.netlify.app&lt;/a&gt;
+&lt;/span&gt;
+&lt;/div&gt; 
+
+---
+
+## Activity 
+
+.hand[while we wait to get started...]
+
+- Go to [minecr.shinyapps.io/feedback-at-scale](https://minecr.shinyapps.io/feedback-at-scale/)
+- Start working through the tutorial
+- Feel free to make mistakes and test out the feedback
+- If you get to the very end, follow the instructions (but if they seem a bit opaque, don't fret, we'll say more about "submission" later...)
+
+---
+
+class: middle, inverse
+
+# Why auto feedback?
+
+---
+
+class: middle
+
+.pull-left[
+.center[
+.huge[👉] &lt;br&gt;
+.large[**Nudging**] &lt;br&gt;
+students towards the right answer, especially in formative assessments
+]
+]
+
+---
+
+
+
+.sample-question[
+Suppose 10 means from a simulated sampling distribution is stored in a vector called `means`.
+
+```r
+means
+```
+
+```
+##  [1] -1.21  0.28  1.08 -2.35  0.43  0.51 -0.57 -0.55 -0.56 -0.89
+```
+What is the value of the first mean?
+]
+--
+&lt;br&gt;
+.pull-left-wide[
+.sample-answer[
+
+```r
+mean[1]
+```
+
+```
+## Error in mean[1]: object of type 'closure' is not subsettable
+```
+]
+]
+--
+.pull-right-narrow[
+&lt;img src="images/student.png" width="60%" style="display: block; margin: auto 0 auto auto;" /&gt;
+]
+
+---
+
+## Nudging
+
+.hand[Not all feedback is useful, at least not for beginners...]
+
+&lt;br&gt;
+
+Providing helpful feedback can help them nudge them towards success:
+
+
+```r
+mean[1]
+```
+
+
+
+---
+
+.sample-question[
+Visualise the relationship between city and highway mileage of cars from the `mpg` dataset, conditional on year of manufacture.
+]
+
+--
+&lt;br&gt;
+.sample-answer[
+There is a strong, positive, linear relationship between the city and highway mileage of cars. Year does not seem to be related to either variable.
+
+```r
+ggplot(mpg,aes(x = hwy, y = cty, fill=year)) +geom_point()+geom_smooth()
+```
+
+&lt;img src="05-feedback_files/figure-html/unnamed-chunk-8-1.png" width="30%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: middle
+
+.pull-left-wide[
+.sample-feedback[
+- You mention a linear relationship, however your plot uses a loess fit to visualise the relationship between city and highway mileage. Also, the plot displays the uncertainty around the fit, but you haven't addressed it in your narrative.
+- Year should be mapped to the `color` aesthetic, not `fill`. 
+- Plot styling: Use informative axis labels, noting units of measurement. Also, give an informative title to your plot.
+- Code styling: Use consistent spacing around operators (e.g ` = `) and line breaks after `+` in each layer of your ggplot.
+]
+]
+.pull-right-narrow[
+&lt;img src="images/teacher.png" width="60%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+class: middle
+
+.pull-left[
+.center[
+.huge[👉] &lt;br&gt;
+.large[**Nudging**] &lt;br&gt;
+students towards the right answer, especially in formative assessments
+]
+]
+.pull-right[
+.center[
+.huge[➕] &lt;br&gt;
+.large[**Scaling**] &lt;br&gt;
+up efficiency of grading faster than (human) resources
+]
+]
+
+---
+
+## Scaling
+
+.hand[Our courses are growing, and that's a good thing, right?]
+
+--
+
+- Students turning in their work as R Markdown documents makes collecting submissions including code and narrative straightforward.
+
+--
+
+- Providing feedback on both the code and narrative is not scalable unless (human) resources dedicated to your course grow proportionally with enrolments.
+
+---
+
+class: middle, inverse
+
+# How auto feedback?
+
+---
+
+&lt;img src="images/puzzle-pieces.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## 📦 learnr
+
+- **learnr** is an R package that makes it easy to create interactive tutorials from R Markdown documents.
+
+- Tutorials can include:
+  - Narrative, figures, illustrations, and equations
+  - Code exercises (R code chunks that users can edit and execute directly)
+  - Multiple choice questions
+  - Videos (YouTube, Vimeo)
+  - Interactive Shiny components
+
+- learnr is on CRAN
+
+
+```r
+install.packages("learnr")
+```
+  
+---
+
+background-image: url(images/learnr-first-look.png)
+background-position: center
+background-repeat: no-repeat
+background-size: contain
+class: middle
+
+---
+
+## 📦 gradethis
+
+- Companion to the learnr package, **gradethis** provides multiple methods to grade learnr exercises:
+  - `grade_code()`: Grade code against a solution
+  - `grade_conditions()`: Grade all specified conditions
+  - `grade_result()`: Grade result of exercise code
+
+- gradethis is not yet on CRAN
+
+
+```r
+devtools::install_github("rstudio-education/gradethis")
+```
+
+---
+
+.huge-text[demo]
+
+.large[
+[**`[tutorial]`**](https://gallery.shinyapps.io/lego-sales/) 
+
+[**`[code]`**](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/lego-sales.Rmd)
+]
+
+---
+
+class: middle, inverse
+
+.huge-text[learnr]
+
+---
+
+## YAML
+
+Start with a YAML, just like in R Markdown:
+
+
+```r
+---
+title: "Lego Sales"
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+    css: "css/font-size.css"
+runtime: shiny_prerendered
+---
+```
+
+- `runtime: shiny_prerendered`
+- `progressive: true` for "Continue" buttons between subsections
+- `alow_skip: true` to allow skipping exercises
+
+---
+
+## Customization
+
+- You can change the style of your learnr tutorial
+- You might, at a minimum, implement a couple customizations for accessibility:
+  - Increase font size in the narrative, using a [CSS file](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/css/font-size.css) that lives in a directory called `css/` and loaded in the YAML with
+
+
+```r
+css: "css/font-size.css"
+```
+
+  - Increase font size in code boxes, using a [JS file](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/js/exercise-font-size.js) that lives in a directory called `js/` and loaded with 
+  
+
+```r
+&lt;script language="JavaScript" src="js/exercise-font-size.js"&gt;&lt;/script&gt;
+```
+  
+---
+
+## Narrative
+
+- R Markdown style section and subsection headings with `##`, `###`, etc.
+- Text, figures, illustrations, and equations.
+- Videos: supported services include YouTube and Vimeo
+
+
+```r
+### Learning goals
+
+- Create frequency tables and arrange them in ascending / descending order
+- Convert numerical variables into ordinal variables by grouping ranges
+- Calculate summary statistics for groups in your data
+
+### Getting help
+
+If you have any questions about the assignment, please post them on [Piazza](https://piazza.com)!
+```
+
+---
+
+## Multiple choice questions
+
+
+```r
+quiz(
+  question("What position is the letter A in the english alphabet?",
+    answer("8"),
+    answer("14"),
+    answer("1", correct = TRUE),
+    answer("23"),
+    incorrect = "See [here](https://en.wikipedia.org/wiki/English_alphabet) and try again.",
+    allow_retry = TRUE
+  ),
+
+  question("Where are you right now? (select ALL that apply)",
+    answer("Planet Earth", correct = TRUE),
+    answer("Pluto"),
+    answer("At a computing device", correct = TRUE),
+    answer("In the Milky Way", correct = TRUE),
+    incorrect = paste0("Incorrect. You're on Earth, ",
+                       "in the Milky Way, at a computer.")
+  )
+)
+```
+
+---
+
+## Text entry questions
+
+
+```r
+question_text(
+  "Please enter the word 'C0rrect' below:",
+  answer("correct", message = "Don't forget to capitalize"),
+  answer("c0rrect", message = "Don't forget to capitalize"),
+  answer("Correct", message = "Is it really an 'o'?"),
+  answer("C0rrect ", message = "Make sure you do not have a trailing space"),
+  answer("C0rrect", correct = TRUE),
+  allow_retry = TRUE,
+  trim = FALSE
+)
+```
+
+---
+
+.your-turn[
+*We strongly recommend one person in each group share their screen and everyone work together to work through the document.*
+
+- Go to [bit.ly/teach-r-online-cloud](https://bit.ly/teach-r-online-cloud)
+- Log in with Google or GitHub, or create a new account
+- Once you join our workspace, start the assignment titled `Palmer penguins`
+- Open `penguins.Rmd` and click on **Run Document**
+- Read the instructions under `Multiple choice questions`
+- See help for `?question` and `?quiz` and don't hesitate to call for help!
+]
+
+
+```{=html}
+&lt;div class="countdown" id="timer_600f4945" style="right:0;bottom:0;" data-warnwhen="0"&gt;
+&lt;code class="countdown-time"&gt;&lt;span class="countdown-digits minutes"&gt;10&lt;/span&gt;&lt;span class="countdown-digits colon"&gt;:&lt;/span&gt;&lt;span class="countdown-digits seconds"&gt;00&lt;/span&gt;&lt;/code&gt;
+&lt;/div&gt;
+```
+
+
+---
+
+## Code exercises - rendered
+
+&lt;img src="images/learnr-exercise-hints.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Code exercises - code
+
+&lt;img src="images/learnr-exercise-code.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Code exercises - solution
+
+&lt;img src="images/learnr-exercise-submit.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="images/learnr-exercise-solution.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+class: middle, inverse
+
+.huge-text[gradethis]
+
+---
+
+&lt;img src="images/learnr-exercise-check-1.png" width="85%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="images/learnr-exercise-check-2.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+&lt;img src="images/learnr-exercise-check-3.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Checking the result
+
+- Use a code chunk with the same label, suffixed with `-check`
+- `.result` refers to the resulting output
+- Think about ways things can go wrong and write test cases for them
+- Write a "catch all" test case for everything else
+
+&lt;img src="images/learnr-exercise-check-code.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+---
+
+
+```r
+knitr::knit_exit()
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "solarized-light",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9",
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>`"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>

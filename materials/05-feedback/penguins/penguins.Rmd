@@ -1,0 +1,197 @@
+---
+title: "Palmer penguins"
+output: 
+  learnr::tutorial:
+    progressive: true
+    allow_skip: true
+runtime: shiny_prerendered
+---
+
+```{r setup, include=FALSE}
+# packages
+library(learnr)
+library(tidyverse)
+#devtools::install_github("rstudio-education/gradethis")
+library(gradethis)
+#devtools::install_github("rundel/learnrhash")
+library(learnrhash)
+library(palmerpenguins)
+
+# set options for exercises and checking
+gradethis_setup()
+
+# hide non-exercise code chunks
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+------------------------------------------------------------------------
+
+**This is a demo tutorial created for the "What they forgot to teach you about teaching R" workshop. See [here](http://wtf-teach.netlify.app/) for slides and full set of materials from the workshop series.**
+
+------------------------------------------------------------------------
+
+## Introduction
+
+```{r stormtrooper, fig.margin = TRUE, echo = FALSE, fig.width=3, out.width = "100%", fig.cap="Illustration by Allison Horst."}
+knitr::include_graphics("images/lter_penguins.png")
+```
+
+Data were collected and made available by [Dr. Kristen Gorman](https://www.uaf.edu/cfos/people/faculty/detail/kristen-gorman.php) and the [Palmer Station, Antarctica LTER](https://pal.lternet.edu/), a member of the [Long Term Ecological Research Network](https://lternet.edu/).
+
+The data are distributed in the [palmerpenguins](https://allisonhorst.github.io/palmerpenguins/) package.
+
+### Learning goals
+
+-   Practice developing exercises with learnr.
+-   Practice writing code checking tests with gradethis.
+
+### Getting help
+
+If you have any questions call for help in Zoom!
+
+### Packages
+
+In this tutorial we will work with the **palmerpenguins** and **tidyverse** packages.
+So let's go ahead and load them!
+
+```{r load-package, exercise = TRUE}
+library(tidyverse)
+library(palmerpenguins)
+```
+
+## Multiple choice questions
+
+Modify the following question to:
+
+-   Allow retry for incorrect answers
+-   Display answers in a random order
+-   Customise the message text for correct answer
+-   Customise the message texts for incorrect answers (try giving different pieces of feedback for different incorrect answers)
+-   Modify the penguin color question to allow multiple correct answers
+-   Place the two questions in a `quiz()`
+
+```{r awesome-penguins}
+question(
+  "How awesome are penguins?",
+  answer("Super awesome!", correct = TRUE),
+  answer("Awesome"),
+  answer("Meh"),
+  answer("Not awesome"),
+  answer("Super not awesome")
+)
+```
+
+```{r penguin-colors}
+question(
+  "Penguins are which of the following colors?",
+  answer("Black", correct = TRUE),
+  answer("White"),
+  answer("Magenta"),
+  answer("Cyan")
+)
+```
+
+## Code exercises
+
+### Checking for the result
+
+Create a frequency table of the species of penguins on Biscoe island, and display the results in descending order of frequency.
+
+Your task is to add more `fail_if()` statements to the code checking chunk to check for realistic mistakes students can make and give them informative feedback that will nudge them in the right direction.
+
+```{r penguins-count, exercise = TRUE}
+penguins %>%
+  filter(island __ "Biscoe") %>%
+  ___(___)
+```
+
+```{r penguins-count-hint-1}
+penguins %>%
+  filter(island == "Biscoe") %>%
+  count(___, ___)
+```
+
+```{r penguins-count-hint-2}
+Add a hint...
+```
+
+```{r penguins-count-solution}
+penguins %>%
+  filter(island == "Biscoe") %>%
+  count(species, sort = TRUE)
+```
+
+```{r penguins-count-check}
+grade_this({
+  pass_if_equal(
+    x = as.character(.result[1,2]), 
+    y = 124, 
+    message = "In this dataset, the most common species of penguins on Biscoe island are Gentoo pengiuns."
+  )
+  fail_if_equal(
+    x = as.character(.result[1,2]), 
+    y = 123, 
+    message = "Checking for 123 doesn't make sense here, change this to some other realistic check."
+  )
+  # add more fail_if_equal() statements...
+  # and fill in the blank below
+  fail("Not quite! ___")
+})
+```
+
+### Checking for the code
+
+Create a frequency table of the island penguins come from and display the results in descending order of frequency.
+
+```{r penguins-island-count, exercise = TRUE}
+penguins %>%
+  ___
+```
+
+```{r penguins-island-count-hint-1}
+penguins %>%
+  count(___)
+```
+
+```{r penguins-island-count-solution}
+penguins %>%
+  count(island, sort = TRUE)
+```
+
+```{r penguins-island-count-check}
+grade_this_code()
+```
+
+## Wrap Up & Submit
+
+Congratulations, we hope you enjoyed reviewing what we've learned so far!
+
+```{r context="server"}
+learnrhash::encoder_logic()
+```
+
+```{r encode, echo=FALSE}
+learnrhash::encoder_ui(
+  ui_before = div(strong("Submit your hash in the form below."), br(), br()),
+  ui_after  = learnrhash::iframe_ui(
+    src = "https://forms.gle/3gAxPNQLvToahatV8",
+    width = "900px", height =  "1000px"
+  )
+)
+```
+
+## Decode demo
+
+The following would not be included in a student facing tutorial, but has been included here to demonstrate the decoding functionality of the [`learnrhash`](https://rundel.github.io/learnrhash/) package.
+
+Paste your hash from the preceding step into the text box below and push the Decode button.
+You should then see printed tibbles containing the question and exercise results you have entered into the tutorial so far.
+See the package README for details on how these data would be extracted in practice for a real assignment.
+
+```{r context="server"}
+learnrhash::decoder_logic()
+```
+
+```{r decode, echo=FALSE}
+learnrhash::decoder_ui()
+```
