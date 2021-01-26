@@ -17,6 +17,10 @@ To view the slides in full screen, click on the slides and then hit F on your ke
 
 ## Your turn
 
+::: {.clock}
+You have 5 minutes for this activity.
+:::
+
 1.  Read the following code chunks out loud. As a group, try to come to an agreement on how to pronounce everything you see on the screen.
 
 ```{r}

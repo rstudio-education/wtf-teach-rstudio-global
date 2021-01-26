@@ -1,10 +1,27 @@
 # Help with finding help {#community}
 
 ![](images/icons8-lifebuoy-100.png){.cover} "Just google it!" is easier said than done!
-It's important to take your students through the process of finding help.
+It's important to take your students through the process of finding help as well as asking good questions to help you help them.
 
-<!--# help with ?help, help with googling, help with packages, e.g. searcher, help with reprex -->
+## Slides
 
-------------------------------------------------------------------------
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/06-help/06-help.html" width="672px" height="379px" allowfullscreen></iframe>
+```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
 
-Materials to be posted.
+## More resources
+
+::: {.package}
+The [**reprex**](https://reprex.tidyverse.org/) package
+:::
+
+::: {.reading}
+[A little more about R](https://socviz.co/appendix.html#a-little-more-about-r) chapter from Kieran Healy's Data Visualisation book
+:::
+
+::: {.package}
+The [**searcher**](https://cran.r-project.org/web/packages/searcher/index.html) package
+:::

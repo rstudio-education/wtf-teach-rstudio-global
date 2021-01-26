@@ -1,0 +1,104 @@
+---
+title: "Help with finding help"
+subtitle: "<br><br> What they forgot to teach you<br>about *teaching* R"
+author: "[wtf-teach.netlify.app](https://wtf-teach.netlify.app/)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["../xaringan-themer.css", "../slides.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "../setup.Rmd"}
+```
+
+```{r include=FALSE}
+library(tidyverse)
+```
+
+## Help with `?help`
+
+```{r out.width="50%", echo = FALSE}
+knitr::include_graphics("images/r-help.png")
+```
+
+.footnote[
+.small[
+https://socviz.co/appendix.html#a-little-more-about-r
+]
+]
+
+---
+
+## (Not so good) help with googling
+
+<br>
+
+.center[
+<iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/6tw5uOth4AY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+## (Better) help with googling
+
+<br>
+
+.center[
+<iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/2sp2isnqoFU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+## Packages designed for help
+
+- `r emo::ji("package")` **[searcher](https://github.com/r-assist/searcher)** offers preliminary support for automatically or manually searching errors that are generated in R
+
+- `r emo::ji("package")` **[reprex](https://reprex.tidyverse.org/)** helps prepare a minimal reproducible example by forcing forces students to fulfill the technical criteria so the instructor can focus on the help that only a human can provide
+
+---
+
+## searcher - search for a term
+
+<br>
+
+.center[
+<iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/HtSiViKp3nk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+## searcher - search for an error
+
+<br>
+
+.center[
+<iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/krtUaS2zt9g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
+
+---
+
+## A (not so great) question
+
+```{r echo=FALSE, out.width="80%"}
+knitr::include_graphics("images/piazza.png")
+```
+
+---
+
+## A much better question with reprex
+
+<br>
+
+.center[
+<iframe width="840" height="473" src="https://www.youtube-nocookie.com/embed/uGcaAJ7ZWEk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+]
