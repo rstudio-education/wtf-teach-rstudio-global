@@ -53,10 +53,9 @@ output:
 |---------------|-------------------------------|
 | 13:00 - 13:15 | Introduction                  |
 | 13:15 - 13:55 | Let them eat cake first!      |
-|               | Cherish day one               |
 | 13:55 - 14:05 | Break                         |   
-| 14:05 - 15:00 | Live code, early and often    |
-|               | Define and pronounce          |
+| 14:05 - 15:00 | Cherish day one               |
+|               | Live code, early and often    |
 
 ---
 
@@ -66,11 +65,12 @@ output:
 
 | Time          | Module                        |
 |---------------|-------------------------------|
-| 13:00 - 13:10 | Recap                         |
-| 13:10 - 13:55 | Provide feedback, instantly   |
-|               | Leverage visuals              |
+| 13:00 - 13:05 | Recap                         |
+| 13:10 - 13:55 | Make room for creativity      |
+|               | Provide feedback, instantly   |
 |               | Help with finding help        |
+|               | Define and pronounce          |
 | 13:55 - 14:05 | Break                         |   
-| 14:05 - 15:00 | Highlight diversity           |
-|               | Make room for creativity      |
+| 14:05 - 15:00 | Leverage visuals              |
+|               | Highlight diversity           |
 |               | Optimize discoverability      |
