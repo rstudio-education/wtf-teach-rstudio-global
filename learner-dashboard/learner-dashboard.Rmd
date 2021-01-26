@@ -86,13 +86,6 @@ renderImage(
 renderValueBox({
   preferred_name <- selected_student() %>%
     select(preferred_name)
-print(paste("input$student:", input$student))
-print(selected_student())
-print(which(student_survey$name == input$student))
-print(paste("nrow_2: ", nrow(student_survey)))
-print(student_survey$name)
-print(student_survey$name == input$student)
-print(preferred_name)
   valueBox(
     value = preferred_name,
     icon = "fa-portrait"
