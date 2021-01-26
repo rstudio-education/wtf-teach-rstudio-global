@@ -6,7 +6,7 @@ How can you make the visuals you use for teaching even more effective?
 ## Slides
 
 ```{=html}
-<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/04-speak/04-speak.html" width="672px" height="379px" allowfullscreen>
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/08-visual/08-visual.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
 ::: {.tip}

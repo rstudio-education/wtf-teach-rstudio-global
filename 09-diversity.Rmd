@@ -3,8 +3,10 @@
 ![](images/icons8-heart-100.png){.cover} There are lots of materials out there that you can highlight in your course.
 Consider how you can make whose materials you're highlighting, whose voices you're amplifying, what language those materials are in, and whether your students (*all* of your students) can see themselves among them.
 
-<!--# datasets, language -->
-
-------------------------------------------------------------------------
-
-Materials to be posted.
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/09-diversity/09-diversity.html" width="672px" height="379px" allowfullscreen>
+</iframe>
+```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::

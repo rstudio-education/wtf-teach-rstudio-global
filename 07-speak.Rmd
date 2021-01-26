@@ -8,7 +8,7 @@ How do you pronounce `POSIXct`? Answers to some of these might seem obvious to y
 ## Slides
 
 ```{=html}
-<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/04-speak/04-speak.html" width="672px" height="379px" allowfullscreen>
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/07-speak/07-speak.html" width="672px" height="379px" allowfullscreen>
 </iframe>
 ```
 ::: {.tip}
