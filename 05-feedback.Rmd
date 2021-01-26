@@ -16,10 +16,10 @@ To view the slides in full screen, click on the slides and then hit F on your ke
 ## Your turn
 
 ::: {.clock}
-You have 10 minutes for this activity.
+You have 15 minutes for this activity.
 :::
 
-1.  Start the assignment titled **05 - Palmer penguins** on RStudio Cloud.
+1.  Start the assignment titled **05 - Penguins tutorial** on RStudio Cloud.
 
 2.  Complete the task under *Multiple choice questions*
 

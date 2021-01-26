@@ -18,7 +18,7 @@ To view the slides in full screen, click on the slides and then hit F on your ke
 You have 10 minutes for this activity.
 :::
 
--   Pick one person from your breakout room to go to the RStudio Cloud project titled **02 - Get creative** and share their screen. Make the plot in the Rmd document titled `ugly-ggplot2.Rmd` as ugly as you can in the allotted time. This should be a group effort where the person sharing the screen is implementing changes others suggest. The others in the team should also be looking up ggplot2 documentation to help come up with the code that implements those changes.
+-   Pick one person from your breakout room to go to the RStudio Cloud project titled **04 - Get creative** and share their screen. Make the plot in the Rmd document titled `ugly-ggplot2.Rmd` as ugly as you can in the allotted time. This should be a group effort where the person sharing the screen is implementing changes others suggest. The others in the team should also be looking up ggplot2 documentation to help come up with the code that implements those changes.
 -   When you see the Zoom message saying "time is almost up", copy and paste the visualisation you came up with [here](https://docs.google.com/document/d/1_mvh3QSV9gEFrQH87956ygJwVunOD_jBkoSbpNxoeO8/edit?usp=sharing).
 
 ::: {.rstudio-cloud}
