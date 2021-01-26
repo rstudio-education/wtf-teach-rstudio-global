@@ -20,6 +20,7 @@
   --green-faint: #8ba24b50;
   --light-blue-faint: #5286c250;
   --pink-faint: #e9765a50;
+  --beige-faint: #fdf6e350;
 }
 
 /* Font colors */
@@ -251,4 +252,41 @@ div.datatables {
   content: "";
   display: table;
   clear: both;
+}
+
+/* Custom boxes */
+.sample-question, .sample-answer, .sample-feedback {
+  padding: 2px 2px;
+}
+.sample-question{
+  border-left: solid 5px var(--light-blue);
+  background-color: var(--light-blue-faint);
+  font-size: 80%;
+}
+.sample-question:before{
+  content: "Sample question:";
+  font-size: 100%;
+  font-weight: bold;
+  color: var(--light-blue);
+}
+.sample-answer {
+  border-left: solid 5px var(--green);
+  background-color: var(--green-faint);
+  font-size: 80%;
+}
+.sample-answer:before{
+  content: "Sample answer:";
+  font-size: 100%;
+  font-weight: bold;
+  color: var(--green);
+}
+.sample-feedback {
+  border-left: solid 5px var(--pink);
+  background-color: var(--pink-faint);
+}
+.sample-feedback:before{
+  content: "Sample feedback:";
+  font-size: 100%;
+  font-weight: bold;
+  color: var(--pink);
 }
