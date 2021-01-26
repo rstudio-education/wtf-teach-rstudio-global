@@ -44,7 +44,6 @@ jobs:
       - name: Build site
         run: |
          install.packages("xml2")
-         install.packages("remotes")
          install.packages("bslib")
          install.packages("downlit")
          bookdown::render_book("index.Rmd", quiet = TRUE)
