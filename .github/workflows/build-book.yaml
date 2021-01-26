@@ -43,6 +43,8 @@ jobs:
 
       - name: Install more packages
         run: |
+         install.packages("remotes")
+         remotes::install_github("rstudio/sass")
          install.packages("xml2")
          install.packages("bslib")
          install.packages("downlit")
