@@ -19,9 +19,8 @@ rmd_files: [
   "07-speak.Rmd",
   "08-visual.Rmd",
   "09-diversity.Rmd",
-  "10-discover.Rmd",
 
-  "11-references.Rmd"
+  "10-references.Rmd"
   ]
 
 new_session: yes
