@@ -1,0 +1,27 @@
+# Make room for creativity {#creativity}
+
+![](images/icons8-art-prices-100.png){.cover} Consider making room for creativity, however long or short your workshop, course, etc.
+How you do this depends on the learning goals of your course as well as the time you have allotted for your students to work on this exercise as well as for you to provide feedback on them.
+
+## Slides
+
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/09-creativity/09-creativity.html" width="672px" height="379px" allowfullscreen></iframe>
+```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
+
+## Your turn
+
+::: {.clock}
+You have 10 minutes for this activity.
+:::
+
+-   Pick one person from your breakout room to go to the RStudio Cloud project titled **02 - Get creative** and share their screen. Make the plot in the Rmd document titled `ugly-ggplot2.Rmd` as ugly as you can in the allotted time. This should be a group effort where the person sharing the screen is implementing changes others suggest. The others in the team should also be looking up ggplot2 documentation to help come up with the code that implements those changes.
+-   When you see the Zoom message saying "time is almost up", copy and paste the visualisation you came up with [here](https://docs.google.com/document/d/1_mvh3QSV9gEFrQH87956ygJwVunOD_jBkoSbpNxoeO8/edit?usp=sharing).
+
+::: {.rstudio-cloud}
+You will use RStudio Cloud for these exercises.
+Click [here](https://rstudio.cloud/spaces/116472/join?access_code=gDHGlJsqAISVgo6FWUpd4FKfZIe6rULO%2FoLvjC85) to join or access the RStudio Cloud workspace for this workshop.
+:::

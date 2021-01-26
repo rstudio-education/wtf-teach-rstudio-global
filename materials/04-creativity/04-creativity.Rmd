@@ -59,10 +59,26 @@ knitr::include_graphics("images/trees.png")
 
 ---
 
+## Learn a new (simple) package and do something with it
+
+.hand[
+"You gotta pick a package or two"
+]
+
+>Pick a package from the list below, and use it to do something. If you want to use a package not on this list, that’s also ok, but it needs to be a package we haven’t used in class. If you start with a package and are struggling to get it to work, ask for help on Piazza or just move to another one.
+
+Examples include **babynames**, **prenoms**, **janeaustenr**, **plotly**, **flametree**, **ggbarf**, etc.
+
+---
+
 ## Make an ugly ggplot2
 
+.hand[
+"Mirror, mirror on the wall, who’s the ugliest of them all?"
+]
+
 .pull-left[
-```{r echo=FALSE, out.width="50%"}
+```{r echo=FALSE, out.width="40%"}
 knitr::include_graphics("images/irnbru.png")
 ```
 ]
