@@ -31,7 +31,7 @@ aggregate(penguins[, 3], list(penguins$species), median, na.rm = TRUE)
 
 ```{r message = FALSE}
 library(palmerpenguins)
-library(tidyverse)
+library(dplyr)
 
 penguins %>%
   group_by(species) %>%
