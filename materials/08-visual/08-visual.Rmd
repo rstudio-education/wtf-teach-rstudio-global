@@ -40,7 +40,7 @@ https://github.com/allisonhorst/stats-illustrations
 ## Visual explanations
 
 ```{r echo=FALSE, out.width="50%"}
-knitr::include_graphics("images/ggplot2_exploration_es.png")
+knitr::include_graphics("images/pepper-list.png")
 ```
 
 .footnote[
@@ -72,7 +72,7 @@ knitr::include_graphics("images/tour-r-rstudio.png")
 
 ## Think beyond the visual...
 
-```{r echo=FALSE, out.width="50%"}
+```{r echo=FALSE, out.width="30%"}
 knitr::include_graphics("images/beyond-visual.png")
 ```
 
