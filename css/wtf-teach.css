@@ -49,6 +49,14 @@
   background-image: url("icons8-study-100.png");
 }
 
+.tutorial {
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  background: #ffffff 5px center/3em no-repeat;
+  background-image: url("icons8-new-window-100.png");
+}
+
 .package {
   padding: 1em 1em 1em 4em;
   margin-bottom: 5px;
