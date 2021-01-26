@@ -12,13 +12,13 @@ rmd_files: [
   "01-cake.Rmd",
   "02-dayone.Rmd",
   "03-livecode.Rmd",
-  "04-speak.Rmd",
 
+  "04-creativity.Rmd",
   "05-feedback.Rmd",
-  "06-visual.Rmd",
-  "07-help.Rmd",
-  "08-diversity.Rmd",
-  "09-creativity.Rmd",
+  "06-help.Rmd",
+  "07-speak.Rmd",
+  "08-visual.Rmd",
+  "09-diversity.Rmd",
   "10-discover.Rmd",
 
   "11-references.Rmd"
