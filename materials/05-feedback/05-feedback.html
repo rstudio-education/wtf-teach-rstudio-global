@@ -9,8 +9,6 @@
     <link href="libs/font-awesome/css/v4-shims.css" rel="stylesheet" />
     <link href="libs/panelset/panelset.css" rel="stylesheet" />
     <script src="libs/panelset/panelset.js"></script>
-    <link href="libs/countdown/countdown.css" rel="stylesheet" />
-    <script src="libs/countdown/countdown.js"></script>
     <link rel="stylesheet" href="../xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="../slides.css" type="text/css" />
   </head>
@@ -38,16 +36,8 @@ layout: true
 
 ---
 
-## Activity 
 
-.hand[while we wait to get started...]
 
-- Go to [minecr.shinyapps.io/feedback-at-scale](https://minecr.shinyapps.io/feedback-at-scale/)
-- Start working through the tutorial
-- Feel free to make mistakes and test out the feedback
-- If you get to the very end, follow the instructions (but if they seem a bit opaque, don't fret, we'll say more about "submission" later...)
-
----
 
 class: middle, inverse
 
@@ -97,7 +87,7 @@ mean[1]
 ]
 --
 .pull-right-narrow[
-&lt;img src="images/student.png" width="60%" style="display: block; margin: auto 0 auto auto;" /&gt;
+&lt;img src="images/student.png" width="100%" style="display: block; margin: auto 0 auto auto;" /&gt;
 ]
 
 ---
@@ -132,7 +122,7 @@ There is a strong, positive, linear relationship between the city and highway mi
 ggplot(mpg,aes(x = hwy, y = cty, fill=year)) +geom_point()+geom_smooth()
 ```
 
-&lt;img src="05-feedback_files/figure-html/unnamed-chunk-8-1.png" width="30%" style="display: block; margin: auto;" /&gt;
+&lt;img src="05-feedback_files/figure-html/unnamed-chunk-9-1.png" width="30%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -148,7 +138,7 @@ class: middle
 ]
 ]
 .pull-right-narrow[
-&lt;img src="images/teacher.png" width="60%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/teacher.png" width="100%" style="display: block; margin: auto;" /&gt;
 ]
 
 ---
@@ -216,20 +206,11 @@ install.packages("learnr")
   
 ---
 
-background-image: url(images/learnr-first-look.png)
-background-position: center
-background-repeat: no-repeat
-background-size: contain
-class: middle
-
----
-
 ## 📦 gradethis
 
 - Companion to the learnr package, **gradethis** provides multiple methods to grade learnr exercises:
-  - `grade_code()`: Grade code against a solution
-  - `grade_conditions()`: Grade all specified conditions
-  - `grade_result()`: Grade result of exercise code
+  - `grade_this()`: Grade result of exercise code
+  - `grade_this_code()`: Grade code of exercise
 
 - gradethis is not yet on CRAN
 
@@ -240,19 +221,19 @@ devtools::install_github("rstudio-education/gradethis")
 
 ---
 
-.huge-text[demo]
+## Demo
 
 .large[
-[**`[tutorial]`**](https://gallery.shinyapps.io/lego-sales/) 
+[**`[tutorial]`**](https://minecr.shinyapps.io/penguins/) 
 
-[**`[code]`**](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/lego-sales.Rmd)
+[**`[code]`**](https://github.com/rstudio-education/wtf-teach-rstudio-global/tree/main/materials/05-feedback/penguins/penguins.Rmd)
 ]
 
 ---
 
 class: middle, inverse
 
-.huge-text[learnr]
+# learnr
 
 ---
 
@@ -260,10 +241,9 @@ class: middle, inverse
 
 Start with a YAML, just like in R Markdown:
 
-
-```r
+```
 ---
-title: "Lego Sales"
+title: "Palmer penguins"
 output: 
   learnr::tutorial:
     progressive: true
@@ -283,17 +263,15 @@ runtime: shiny_prerendered
 
 - You can change the style of your learnr tutorial
 - You might, at a minimum, implement a couple customizations for accessibility:
-  - Increase font size in the narrative, using a [CSS file](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/css/font-size.css) that lives in a directory called `css/` and loaded in the YAML with
+  - Increase font size in the narrative, using a [CSS file](https://github.com/rstudio-education/wtf-teach-rstudio-global/tree/main/materials/05-feedback/penguins/css/font-size.css) that lives in a directory called `css/` and loaded in the YAML with
 
-
-```r
+```
 css: "css/font-size.css"
 ```
 
-  - Increase font size in code boxes, using a [JS file](https://github.com/mine-cetinkaya-rundel/teach-r-online/blob/master/02-tutorial/examples/lego-sales/js/exercise-font-size.js) that lives in a directory called `js/` and loaded with 
+  - Increase font size in code boxes, using a [JS file](https://github.com/rstudio-education/wtf-teach-rstudio-global/tree/main/materials/05-feedback/penguins/js/exercise-font-size.js) that lives in a directory called `js/` and loaded with 
   
-
-```r
+```
 &lt;script language="JavaScript" src="js/exercise-font-size.js"&gt;&lt;/script&gt;
 ```
   
@@ -302,20 +280,18 @@ css: "css/font-size.css"
 ## Narrative
 
 - R Markdown style section and subsection headings with `##`, `###`, etc.
-- Text, figures, illustrations, and equations.
+- Text, figures, illustrations, and equations
 - Videos: supported services include YouTube and Vimeo
 
-
-```r
+```
 ### Learning goals
 
-- Create frequency tables and arrange them in ascending / descending order
-- Convert numerical variables into ordinal variables by grouping ranges
-- Calculate summary statistics for groups in your data
+-   Practice developing exercises with learnr.
+-   Practice writing code checking tests with gradethis.
 
 ### Getting help
 
-If you have any questions about the assignment, please post them on [Piazza](https://piazza.com)!
+If you have any questions call for help in Zoom!
 ```
 
 ---
@@ -365,27 +341,6 @@ question_text(
 
 ---
 
-.your-turn[
-*We strongly recommend one person in each group share their screen and everyone work together to work through the document.*
-
-- Go to [bit.ly/teach-r-online-cloud](https://bit.ly/teach-r-online-cloud)
-- Log in with Google or GitHub, or create a new account
-- Once you join our workspace, start the assignment titled `Palmer penguins`
-- Open `penguins.Rmd` and click on **Run Document**
-- Read the instructions under `Multiple choice questions`
-- See help for `?question` and `?quiz` and don't hesitate to call for help!
-]
-
-
-```{=html}
-&lt;div class="countdown" id="timer_600f4945" style="right:0;bottom:0;" data-warnwhen="0"&gt;
-&lt;code class="countdown-time"&gt;&lt;span class="countdown-digits minutes"&gt;10&lt;/span&gt;&lt;span class="countdown-digits colon"&gt;:&lt;/span&gt;&lt;span class="countdown-digits seconds"&gt;00&lt;/span&gt;&lt;/code&gt;
-&lt;/div&gt;
-```
-
-
----
-
 ## Code exercises - rendered
 
 &lt;img src="images/learnr-exercise-hints.png" width="85%" style="display: block; margin: auto;" /&gt;
@@ -398,60 +353,182 @@ question_text(
 
 ---
 
-## Code exercises - solution
+class: middle, inverse
+
+# gradethis
+
+---
+
+## Code exercises - checking
 
 &lt;img src="images/learnr-exercise-submit.png" width="85%" style="display: block; margin: auto;" /&gt;
 
-&lt;img src="images/learnr-exercise-solution.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/learnr-exercise-check-result.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Checking the result - `grade_this()`
+
+- Use a code chunk with the same label, suffixed with `-check`
+- `.result` refers to the resulting output
+- Think about ways things can go wrong and write test cases for them
+- Write a "catch all" fail statement for everything else
+
+&lt;img src="images/learnr-exercise-check-result.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Checking code - `grade_this_code()`
+
+&lt;img src="images/learnr-exercise-check-code.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+## Keep in mind!
+
+- Exercise chunks run in independent sessions, they don't actually work like R Markdown chunks (i.e. they don't remember what happened before)
+
+- Use setup chunks to make the tutorial experience feel more like a data analysis story
+
+- Leverage this feature to write robust code and checks
+
 
 ---
 
 class: middle, inverse
 
-.huge-text[gradethis]
+# Sharing
 
 ---
 
-&lt;img src="images/learnr-exercise-check-1.png" width="85%" style="display: block; margin: auto;" /&gt;
+## Sharing with students
+
+- You could share the R Markdown document (and all accompanying files) but that’s probably not what you want to do...
+
+- Deploy on
+  - shinyapps.io
+  - RStudio Connect (free for academic use, requires setup)
+
+- Road less travelled: [distribute as a package](https://education.rstudio.com/blog/2020/09/delivering-learnr-tutorials-in-a-package/)
+
+- See the [publishing instructions](https://rstudio.github.io/learnr/publishing.html) on the learnr website for step-by-step instructions
 
 ---
 
-&lt;img src="images/learnr-exercise-check-2.png" width="75%" style="display: block; margin: auto;" /&gt;
+class: middle, inverse
+
+# Recording data
 
 ---
 
-&lt;img src="images/learnr-exercise-check-3.png" width="75%" style="display: block; margin: auto;" /&gt;
+## Recording attempts
+
+- A "good enough" solution for formative exercises: embed a 
+Google/Microsoft/etc. Form at the end and ask students to "submit" their work.
+
+- This only records that the student reached the end of the tutorial and not how (or even if) they answered any of the questions or exercises.
+
+- **Tip:** Add a free-text question to the form asking students to reflect on the exercises they just completed - you can then analyse the free-text data to gain insights into what students are struggling with -- "minute paper".
 
 ---
 
-## Checking the result
+## Recording solutions
 
-- Use a code chunk with the same label, suffixed with `-check`
-- `.result` refers to the resulting output
-- Think about ways things can go wrong and write test cases for them
-- Write a "catch all" test case for everything else
-
-&lt;img src="images/learnr-exercise-check-code.png" width="100%" style="display: block; margin: auto;" /&gt;
-
----
+- The [`learnrhash`](https://rundel.github.io/learnrhash/) package builds on the previous method by providing a way for students to submit their answers by generating a text "hash" which can be copy and pasted into the web form.
 
 
 ```r
-knitr::knit_exit()
+devtools::install_github("rundel/learnrhash")
 ```
 
+- This package is being used to create the submission tool at the end of the sample tutorial.
 
 
+.footnote[
+.small[
+See also the [**submitr**](https://github.com/dtkaplan/submitr) package by Danny Kaplan for a different approach to recording event data in learnr tutorials.
+]
+]
 
+---
 
+class: middle, inverse
 
+# Closing thoughts
 
+---
 
+## Best practices for automated feedback
 
+--
 
+- Measure twice, cut once (verify the correctness of your tests)
 
+--
 
+- Use rounding &amp; type coercion to write robust tests
 
+--
+
+- Don't give automated feedback on everything, asking narrative questions that can't be auto checked but gets the student thinking and writing has pedagogical benefits
+
+--
+
+- Consider peer feedback where automated feedback is not feasible (e.g. interpretation, narrative) but scalability is an issue
+
+---
+
+.large[
+.light-blue[
+.hand[Q: What is an approachable way to get started?]
+]
+]
+
+Build a tutorial where students build develop their analysis in exercise code 
+chunks (that are not checked) and only multiple choice questions are used for 
+assessment.
+
+---
+
+.large[
+.light-blue[
+.hand[Q: I've built simple tutorials already. How do I make the jump to code checking and providing automated feedback that is actually useful?]
+]
+]
+
+- Replicate an existing tutorial with checks (e.g. [this one](https://minecr.shinyapps.io/feedback-at-scale/)) and make incremental changes
+- Read the [Testing](https://r-pkgs.org/tests.html#test-tests) chapter in R Packages (Wickham and Bryan) 
+- Also read the [Metaprogramming](https://adv-r.hadley.nz/metaprogramming.html) section in Advanced R (Wickham)
+
+&lt;img src="images/learnr-learn-more.jpeg" width="75%" style="display: block; margin: auto;" /&gt;
+
+---
+
+.large[
+.light-blue[
+.hand[Q: Sounds great, but can it handle my class size and usage?]
+]
+]
+
+- First, chances are you're not using these live, but you might be...
+- If so, make sure to max out your instances and instance size on shinyapps.io.
+- Essential reading:
+  - [Publishing learnr Tutorials on shinyapps.io](https://cran.r-project.org/web/packages/learnr/vignettes/shinyapps-publishing.html) by Angela Li
+  - [Teach R with learnr: a powerful tool for remote teaching](https://education.rstudio.com/blog/2020/05/learnr-for-remote/) by Allison Horst
+
+---
+
+.large[
+.light-blue[
+.hand[Q: Where can I find more examples?]
+]
+]
+
+* [dsbox](https://rstudio-education.github.io/dsbox/tutorials/index.html) - Tutorials accompanying [Data Science in a Box](https://datasciencebox.org/)
+
+* [RStudio Cloud Primers](https://rstudio.cloud/learn/primers) - these are all learnr tutorials and their code is available on [github](https://github.com/rstudio-education/primers)
+
+* [tutorialgRaficosFN](https://github.com/yabellini/tutorialgRaficosFN) by Yanina Saibene Bellini
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
