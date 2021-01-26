@@ -1,0 +1,73 @@
+---
+title: "Make room for creativity"
+subtitle: "<br><br> What they forgot to teach you<br>about *teaching* R"
+author: "[wtf-teach.netlify.app](https://wtf-teach.netlify.app/)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: ["../xaringan-themer.css", "../slides.css"]
+    nature:
+      highlightStyle: solarized-light
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "16:9"
+      slideNumberFormat: |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+---
+
+```{r child = "../setup.Rmd"}
+```
+
+class: inverse, middle
+
+# Think big!
+
+---
+
+## Analyze your own data
+
+>TL;DR  
+>Pick a dataset, any dataset…  
+>
+>…and do something with it. That is your final project in a nutshell. More details below.  
+>
+>May be too long, but please do read  
+>The final project for this class will consist of analysis on a dataset of your own choosing. The dataset may already exist, or you may collect your own data using a survey or by conducting an experiment. You can choose the data based on your interests or based on work in other courses or research projects. The goal of this project is for you to demonstrate proficiency in the techniques we have covered in this class (and beyond, if you like) and apply them to a novel dataset in a meaningful way.
+
+---
+
+class: inverse, middle
+
+# Think smaller!
+
+---
+
+## Draw a christmas tree
+
+```{r echo=FALSE, out.width = "45%"}
+knitr::include_graphics("images/trees.png")
+```
+
+.footnote[
+.small[
+[smarterpoland.pl/index.php/2017/12/christmas-trees](http://smarterpoland.pl/index.php/2017/12/christmas-trees/)
+]
+]
+
+---
+
+## Make an ugly ggplot2
+
+.pull-left[
+```{r echo=FALSE, out.width="50%"}
+knitr::include_graphics("images/irnbru.png")
+```
+]
+.pull-right[
+```{r echo=FALSE, out.width="100%"}
+knitr::include_graphics("images/trex.png")
+```
+]
