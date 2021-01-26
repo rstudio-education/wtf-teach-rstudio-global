@@ -3,8 +3,22 @@
 ![](images/icons8-picture-100.png){.cover} Visuals are incredibly powerful aides for learning, but not all pictures are worth a thousand words.
 How can you make the visuals you use for teaching even more effective?
 
-<!--# annotation, incremental builds, non-visuals, xaringan -->
+## Slides
 
-------------------------------------------------------------------------
+```{=html}
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/04-speak/04-speak.html" width="672px" height="379px" allowfullscreen>
+</iframe>
+```
+::: {.tip}
+To view the slides in full screen, click on the slides and then hit F on your keyboard.
+:::
 
-Materials to be posted.
+## More resources
+
+::: {.package}
+A [repo](https://github.com/allisonhorst/stats-illustrations) full of illustrations from Allison Horst, in multiple languages!
+:::
+
+::: {.package}
+The [**xaringanExtra**](https://pkg.garrickadenbuie.com/xaringanExtra/#/) package for getting creative with your slides!
+:::
