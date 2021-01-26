@@ -6,7 +6,7 @@ How you do this depends on the learning goals of your course as well as the time
 ## Slides
 
 ```{=html}
-<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/09-creativity/09-creativity.html" width="672px" height="379px" allowfullscreen></iframe>
+<iframe src="https://rstudio-education.github.io/wtf-teach-rstudio-global/materials/04-creativity/04-creativity.html" width="672px" height="379px" allowfullscreen></iframe>
 ```
 ::: {.tip}
 To view the slides in full screen, click on the slides and then hit F on your keyboard.
