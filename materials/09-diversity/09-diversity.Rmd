@@ -22,7 +22,7 @@ Just a few examples...
 
 - [**datos**](https://cienciadedatos.github.io/datos/) - Provides the Spanish translation of English data sets originally available in other R packages
 
-- [**dados**](https://cienciadedatos.github.io/dados/) - Provides the Spanish translation of English data sets originally available in other R packages
+- [**dados**](https://cienciadedatos.github.io/dados/) - Provides the Portuguese translation of English data sets originally available in other R packages
 
 - [R4DS en espanol](https://r4ds-en-espaniol.netlify.app/) and in many other languages!
 

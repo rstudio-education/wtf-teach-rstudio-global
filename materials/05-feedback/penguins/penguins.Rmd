@@ -180,8 +180,8 @@ learnrhash::encoder_logic()
 learnrhash::encoder_ui(
   ui_before = div(strong("Submit your hash in the form below."), br(), br()),
   ui_after  = learnrhash::iframe_ui(
-    src = "https://forms.gle/3gAxPNQLvToahatV8",
-    width = "900px", height =  "1000px"
+    src = "https://docs.google.com/forms/d/e/1FAIpQLSfvAYLFXu0Gc-U9FPzWegO6i147ta30cebDWSp5Eni5GXWBgQ/viewform?embedded=true",
+    width = "700px", height =  "1000px"
   )
 )
 ```
